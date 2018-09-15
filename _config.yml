@@ -1,7 +1,7 @@
 # Site
 title:              Colin Pattinson Blog
-bio:                'Selection of blog posts, weeknotes and sprintnotes from current and previous jobs'
-description:        "Working in the open. Documenting what myself and the team have been doing 1 sprint at a time."
+bio:                'Selection of blog posts, weeknotes and sprintnotes from current and previous jobs. Feel free to get in touch.'
+description:        "Working in the open. Sharing what I learn."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.jpg'
