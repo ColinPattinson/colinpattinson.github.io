@@ -11,12 +11,12 @@
 						<p>{{ site.description }}</p>
 					</li>
 					<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">Learn More</span></a></li>
-					{% if site.email %}<li>
-                        <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><em class="fa fa-fw fa-envelope-square"></em> Email</a>
-                    </li>{% endif %}
-                    {% if site.twitter %}<li>
+					{% if site.twitter %}<li>
                         <a href="http://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer"><em class="fa fa-fw fa-twitter-square"></em> Twitter</a>
                     </li>{% endif %}
+                    {% if site.email %}<li>
+                        <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><em class="fa fa-fw fa-envelope-square"></em> Email</a>
+                    </li>{% endif %}                    
                     {% if site.facebook %}<li>
                         <a href="http://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-facebook-square"></i> Facebook</a>
                     </li>{% endif %}
