@@ -3,7 +3,7 @@ layout: post
 title:  "Blog posts published elsewhere"
 date:   2018-09-16
 excerpt: "Posts from August 2016 to August 2018"
-tag: [Published elsewhere]
+tag: [Public Sector]
 comments: false
 ---
 
