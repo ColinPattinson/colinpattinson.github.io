@@ -1,6 +1,6 @@
 // content area
 .content {
-	@include font-size(14);
+	@include font-size(15);
 	padding: 0 2rem;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased !important;
@@ -90,9 +90,9 @@ figcaption {
 // links
 a {
   transition: color .4s;
-  color: $maroon;
+  color: $color_shark;
   &:link {
-  	color: $maroon;
+  	color: $color_shark;
   }
   &:visited {
   	color: $color_tuatara;
