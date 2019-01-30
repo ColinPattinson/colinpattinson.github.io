@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Weeknotes E34"
+date:   2019-01-29
+excerpt: "Onboarding day part 1"
+tag: [Department of Health and Social Care]
+comments: false
+---
+
+# Weeknotes E34
+Hi, I’m Colin a product manager working at the Department of Health and Social Care. Each week I’m going to keep a running update of the work I’ve done & things I’ve learned along the way.
+
+## My current priority:
+> Supporting the Healthy Start private beta and a helping hand in the Healthy Start vitamins discovery
+
+Some interesting and shareable things that happened this week. Other more mundane things also happened…
+
+## Onboarding day pt.1
+On Monday we hung out with 2 of the 4 suppliers we are going to be cooperating with for a mini card trial (other 2 in a couple of weeks). It’s taken a fair amount of navigation to get to the point where we are sitting with people and hashing out how we get the cards in peoples hands. It’s always been done with great help from others and am still super thankful people remain keen to help us out.
+
+The days were structured around mostly what sort of services can we get access to (so what can suppliers provide), how do we do it, who is our point of contact and then lots and lots and lots of learning about how cards/finance/banking/payments, etc work.
+My measure of success are we learning and moving forward. We learned a lot and we are progressing.
+Now we have NDA’s and more tasks to do as a team.
+
+## Social Care Green Paper
+I got the opportunity to help out people working on the social care green paper. My role was beyond tiny. I was writing up a case study, sourcing some other case studies and some minor scrutiny. All the same I love that my job includes having the scope to get involved with things like this.
+
+## Local Welcome
+I cycled over to Oval and had a great chat with the team at [Local Welcome](http://localwelcome.org/). The Healthy Start team has been very proactive in talking to third sector/charities working in food/poverty circles and this very much falls into that bucket. Conversation was stimulating and constructive but also really fun to see their little workspace which doubles up as a community centre and homeless shelter. Immersive! Plus the feedback loop must be quick if you can learn more about users as there is only a door dividing you. 
+
+## Veg Power advert
+The advert to promote kids eating more veg was released. We’d heard about it being made and it [can be seen here](https://www.itv.com/presscentre/press-releases/exciting-brave-new-campaign-get-kids-eat-veg-eat-them-defeat-them). They have some great stats that accompany the advert, check some below....
+- The UK ranks 21 out of 28 in the EU for fresh vegetable consumption. (Euromonitor data)
+- 96% of teenagers and 80% of primary school age children don’t eat enough vegetables (Veg Facts – The Food Foundation)
+- 44% of children will remove at least some, if not all of the salad from a burger (YouGov)
+- Nearly half of parents (49.2%) wait at least 5 minutes or more at family mealtime for their children to finish their vegetables, that equates to 30 hours a year. (You Gov)
+
+## Show and tell prep
+I’ve joined forces with blogging boss Jimmy for a show and tell. We’ve been cutting and dicing a presentation. A united force with the digital team and content/comms.
+
+## User research plans
+Some great progress being made in recruiting and speaking to users. Sounds like we have 11 people in Plymouth to speak to and already colleague Sophie is doing heroics in chatting to people about vitamins. I can’t really take much credit for this other than willing it to be so but it brings pleasure that this is happening.
+
+## Apolitical trial
+I’m officially doing “Apolitical’s pilot learning program for Digital, Data and Technology professionals, delivered in partnership with GDS Academy”. Mostly this consists of getting email updates about interesting stories. I love to read so this is nice but it is more emails being hammered at me.
+
+## ACS board paper
+I’m in Manchester soo to present to the Association of Convenience Stores. In order for this to happen I created my first board paper. I did it in 15 minutes but I am convinced it’s a masterpiece.
+Spoiler: I’m going to go explain what we are doing and try and get them to help us improve the scheme.
+
+## What I've been reading
+1.  The ever [excellent Whitehall monitor](https://www.instituteforgovernment.org.uk/publication/whitehall-monitor-2019/civil-service). 
+2. [Chief Medical Officers report](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/767549/Annual_report_of_the_Chief_Medical_Officer_2018_-_health_2040_-_better_health_within_reach.pdf) and look towards 2040. Not read through all of it but can agree with the “the need for continued focus on the social determinants of health and as every cause of death, at every age, is more common in the most deprived”. Lots about healthy eating in there.
+3. What [Amazon got up to in 2018](https://www.vox.com/the-goods/2018/12/13/18136695/amazon-year-growth-alexa-web-services-kids-tech).
+4. [Beyond user-centered design](https://medium.com/@cassierobinson/beyond-human-centred-design-to-501a994f3123). Always a fan of not forgetting communities needs and involving other unseen actors (machines or the environment). 
+5. We played around with very similar ideas back in my Parliament days. I [saw these designs when they were a work in progress](https://www.mysociety.org/2018/12/13/making-votes-easier-to-understand/) and always approve of those working to make our democracy better.
+6. How to use [cost of delay to prioritise work](http://alaniswright.com/blog/how-government-digital-teams-can-use-cost-of-delay-to-prioritize-work/) in Government.
+7. A [train that barks in Japan](http://www.asahi.com/ajw/articles/AJ201801170001.html). Yes, lovely idea.
+8. I stumbled upon [the Peckham Experiment](http://thephf.org/peckhamexperiment). Sounds utterly fascinating. An experiment that ran from 1926-1950 that viewed health as more than the absence of disease.
