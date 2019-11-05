@@ -8,4 +8,6 @@ comments: false
 ---
 
 # NHSX weekly updates!
+![Team analysing research with lots of grouping of post it notes on a window](https://raw.githubusercontent.com/nhsx/Mental-Health/master/images/Themes.jpg)
+
 I've been publishing more updates over at [NHSX Mental Health github pages](https://nhsx.github.io/Mental-Health/).
