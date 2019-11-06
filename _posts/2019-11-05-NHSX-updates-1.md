@@ -2,7 +2,7 @@
 layout: post
 title:  "Mental Health Discovery is Done!"
 date:   2019-11-05
-excerpt: "Team have finished a discovery into children and young people's mental health"
+excerpt: "Finished a discovery phase into children and young people's mental health"
 tag: [NHSX]
 comments: false
 ---
