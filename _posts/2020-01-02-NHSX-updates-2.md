@@ -10,12 +10,12 @@ comments: false
 # Coffee Club
 Our team has a very committed tea club. When I rejoined a teapot was nearly always in use. Late 2018 I decided to make a sister club, the coffee club, for those needing some of that beany goodness.
 
-Inspired by a [previous colleagues excellent cake data post](https://medium.com/@dasbarrett/cake-as-work-255567171e3f) I wanted to make sure the club was transparent and data-informed. This is also the 2nd formal coffee club I have run. The last one did track coffee but was more about scoring quality.
+Inspired by a [previous colleagues excellent cake data post](https://medium.com/@dasbarrett/cake-as-work-255567171e3f) I wanted to make sure the club was transparent and data-informed. This is also the 2nd formal coffee club I have run. The last one did track coffee consumption but was more about scoring quality.
 
 The coffee club was ran in the open with an accompanying spreadsheet tracking our consumption. You can enjoy that [artefact right here](https://docs.google.com/spreadsheets/d/1s2jPOstVayIcVUwlTC2DJ0RHO3M8qA6vjFDid-g6F4k/edit?usp=sharing).
 
 ## How did coffee club work? 
-Typically I would buy coffee and bring it in. We’d all contribute to making and cleaning the cafetiere. It was _nearly_ always ground coffee (one week we had beans and [wonderful colleague Isaac](https://twitter.com/i_smith) brought in a grinder). After the coffee was drunk, i’d muse and take responsibility for scoring. This has drawbacks but leaves room for iteration in 2020.
+Typically I would buy coffee and bring it in. We’d all contribute to making and cleaning the cafetiere. It was _nearly_ always ground coffee (one week we had beans and [wonderful colleague Isaac](https://twitter.com/i_smith) brought in a grinder). After the coffee was drunk, i’d muse, chat with colleagues and take responsibility for scoring. This has drawbacks but leaves room for iteration in 2020.
 
 I always drunk the coffee black, no milk of any kind. Typically quite strong, so much so someone has said the coffee tasted like “tar”.
 
@@ -40,14 +40,14 @@ Lavazza Coffee won out but only slightly. Our freshly ground Cafe Direct D.R.Con
 ### Worst - Vanilla Coffee from Zanzibar
 Score: 11%
 
-I went to Zanzibar this year. I went to a farm which grew its own coffee beans and grew vanilla. I bought some vanilla coffee. It was absolutely vile. We even tried to cut it with other coffee to balance it out but all it would do is make any drink taste of paint. We had a bag of coffee bought and brought from the United States this year too. 
+I went to Zanzibar this year. I went to a farm which grew its own coffee beans and grew vanilla. I bought some vanilla coffee. It was absolutely vile. We even tried to cut it with other coffee to balance it out but all it would do is make any drink taste of paint. We had a bag of coffee bought and brought from the United States this year too.
 
 ### Average Score
 All scores averaged left us with 69.38%. As it was only me scoring I’ll be honest the 70% range is pretty decent. As a baseline a cup of coffee from Costa would likely not creep over the 58% region. From my point of view 
 
 ### Trend
 ![Coffee price vs score of taste](https://raw.githubusercontent.com/ColinPattinson/colinpattinson.github.io/master/assets/img/price%20v%20score.png)
-Damn that vanilla coffee was awful. The above graph shows a trend that the higher the price of coffee then the higher the taste score.
+Damn that vanilla coffee was awful, a real outlier. The above graph shows a trend that the higher the price of coffee then the higher the taste score.
 
 ## Cost
 I spent in total £136.18. This led to;
