@@ -43,7 +43,7 @@ Score: 11%
 I went to Zanzibar this year. I went to a farm which grew its own coffee beans and grew vanilla. I bought some vanilla coffee. It was absolutely vile. We even tried to cut it with other coffee to balance it out but all it would do is make any drink taste of paint. We had a bag of coffee bought and brought from the United States this year too.
 
 ### Average Score
-All scores averaged left us with 69.38%. As it was only me scoring I’ll be honest the 70% range is pretty decent. As a baseline a cup of coffee from Costa would likely not creep over the 58% region. From my point of view 
+All scores averaged left us with 69.38%. As it was only me scoring I’ll be honest the 70% range is pretty decent. As a baseline a cup of coffee from Costa would likely not creep over the 58% region. From my point of view the standard is high-ish.
 
 ### Trend
 ![Coffee price vs score of taste](https://raw.githubusercontent.com/ColinPattinson/colinpattinson.github.io/master/assets/img/price%20v%20score.png)
