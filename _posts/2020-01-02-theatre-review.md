@@ -85,7 +85,7 @@ Expected a bit more.
 
 17) Twilight Zone, C-
 
-Utter tosh. Entertainingly bad, I haven't seen the show but this was silly. I still laugh at silly things.
+Utter tosh. Entertainingly bad, I haven't seen the TV show but this was silly. I still laugh at silly things.
 
 18) Jesus Hopped the A Train, C-
 
