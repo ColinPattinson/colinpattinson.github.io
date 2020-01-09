@@ -20,6 +20,8 @@ It was a few months ago that I finished reading it but to both refresh my memory
 
 [Jonathan Barnbrook](https://books.google.co.uk/books?id=SM6wrKiO5osC&pg=PA256&lpg=PA256&dq=Typography+truly+reflects+the+whole+of+human+life%E2%80%A6+a+direct+visual+representation+of+the+tone+of+voice+with+which+we+express+the+spirit+of+our+time.&source=bl&ots=YjQRWJ-aNB&sig=ACfU3U3ID0ptILcFh-fP1FkQwomntM0EtA&hl=en&sa=X&ved=2ahUKEwijk7bPk-_mAhWLTcAKHVWPBCwQ6AEwAHoECAoQAQ#v=onepage&q=Typography%20truly%20reflects%20the%20whole%20of%20human%20life%E2%80%A6%20a%20direct%20visual%20representation%20of%20the%20tone%20of%20voice%20with%20which%20we%20express%20the%20spirit%20of%20our%20time.&f=false)
 
+*_Fab colleague Laurence read this post and suggested [a post of popular fonts](https://www.lifehack.org/428846/top-20-most-popular-fonts-of-all-time) would help readers conceptualise what a font is. I aim to please. Enjoy!_
+
 ## Typeface vs font
 The vast majority of people use font and typeface interchangeably to mean the same thing. Unsurprisingly confusing as we have software programs that have a drop down saying “font” where you can pick dozens of fonts/typefaces. There is however a difference.
 
