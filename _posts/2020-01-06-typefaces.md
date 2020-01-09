@@ -10,6 +10,8 @@ comments: false
 # A post about typefaces
 Last year I read a [fun book all about typefaces/fonts](https://www.simongarfield.com/books/just-my-type/) that I picked up in a charity shop.
 
+![Just my type book cover](https://simongarfield.com/wp-content/uploads/2018/09/Just_My_Type.jpg)
+
 It was a few months ago that I finished reading it but to both refresh my memory and as a way to share some of what I learned here is a rambling post on the topic.
 
 ## Why is this interesting?
@@ -38,7 +40,7 @@ Don’t be a hater though… it’s actually [a great typeface for those with dy
 ## Legibility vs Readability
 Legibility is about the ability to distinguish characters (/ [glyphs](https://en.wikipedia.org/wiki/Glyph)) from one another. Characters width, weight, height and its use of serifs all affect legibility.
 
-Readability is a bit more broader about how the type is arranged. This can be affected by type size, type case, colour and contrast.
+Readability is more broad, it's about how the type is arranged. This can be affected by type size, type case, colour and contrast.
 
 Maybe this site describes it better…
 
@@ -46,7 +48,7 @@ Maybe this site describes it better…
 
 Source: [Sitepoint](https://www.sitepoint.com/typography-readability-and-legibility-part-1/)
 
-The wrong choice of typeface/font could wear out a readers. Some type/fonts perform better than others.
+The wrong choice of typeface/font could wear out a reader. Some type/fonts perform better than others.
 
 ## Measuring readability
 There are a lot of [measurements of readability](https://en.wikipedia.org/wiki/Readability). Just because something may be legible or readable doesn’t mean it’s always the right typeface. As the book highlights some things are “to be seen rather than read”.
@@ -58,7 +60,7 @@ Swiss type designer [Frutiger](https://en.wikipedia.org/wiki/Adrian_Frutiger) mi
 ## Pruning
 Typefaces may not destined to be universally more readable than others. It seems according to Licko “you read best what you read most”. Thus we think that Arial or Times New Roman is easy to read because we do it so often.
 
-I’ve been reading some books about neuroscience recently and can see a link to the idea of [pruning](https://en.wikipedia.org/wiki/Synaptic_pruning). Our brain gets better at performing tasks we repeat regularly and dumping ones we don’t do or do rarely. Seems similar, although might fall apart if you ever tried to just read everything in windings for 5 years.
+I’ve been reading some books about neuroscience recently and can see a link to the idea of [pruning](https://en.wikipedia.org/wiki/Synaptic_pruning). Our brain gets better at performing tasks we repeat regularly and dumping ones we don’t do or do rarely. Seems similar, although might fall apart if you ever tried to just read everything in Windings for 5 years.
 
 ## & = and
 It originated from the latin “et”. It’s shape is the two smushed together (with some evolving design flourishes over time).
@@ -79,9 +81,10 @@ The typeface of the tube has a rather wonderful ‘i’. Here is an example with
 I love the little diamond.
 
 ## Transport
-The [typeface transport](https://en.wikipedia.org/wiki/Transport_(typeface)) has a great story too. Not only is half the combo behind it born in Durham but they had to battle it out with another potential typeface to win the Ministry of Transport contract. 
+The [typeface transport](https://en.wikipedia.org/wiki/Transport_(typeface)) has a great story too. Not only is half the combo behind it born in Durham but they had to battle it out with another potential typeface to win the Ministry of Transport contract.
 
-They prototyped & tested it in Preston and on the M1. They even had a little contest at RAF Benson Airport in Oxfordshire. “They got several airmen to sit in chairs on a platform… and on the top of an old Ford Anglia they’d fixed these test signs with just two destinatations on them, and they drove them towards these airmen and they had to say which ones they could see or read first”.
+They prototyped & tested it in Preston and on the M1. They even had a little contest at RAF Benson Airport in Oxfordshire. “They got several airmen to sit in chairs on a platform… and on the top of an old Ford Anglia they’d fixed these test signs with just two
+destinations on them, and they drove them towards these airmen and they had to say which ones they could see or read first”.
 
 ## Metro
 The same wonderful [Margaret Calvert](https://en.wikipedia.org/wiki/Margaret_Calvert) who helped to design Transport also helped to create Calvert. A font originally created after Calvert and type designer partner Kinneir won a competition to design all graphics and communications for a new town in France, Saint-Quentin-en-Yvelines. The issue was the French town rejected it, saying it looked too English. One’s loss is another's gain and it eventually found its way to the Tyne and Wear metro system.
@@ -107,3 +110,5 @@ You can find the [Type Archive](http://www.typearchive.org/) not far from Stockw
 
 ## Other posts
 This probably isn’t useful or interesting but others write more interesting things about type and the web. I recently [read a post on performance and typography](https://calibreapp.com/blog/performance-for-designers-typography) but i’ll let you go discover the rest...
+
+
