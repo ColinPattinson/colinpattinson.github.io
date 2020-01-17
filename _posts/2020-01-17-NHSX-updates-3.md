@@ -55,7 +55,7 @@ The pitch honestly didn’t quite go as expected. I sort of thought it would spa
 ![Picture of earth](https://images.pexels.com/photos/355935/pexels-photo-355935.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
 
 ## Sidenote: Entrepreneurial culture
-I’m genuinely delighted that NHSX has the culture that internal ideas can be nurtured and encouraged. Tons of credit to a pair of people who encouraged the idea and then gave it the necessary thumbs up so I could dedicate a smidgen of my time to it. It fills me with excitement that in the future my colleagues can pitch wonderfully valuable endeavours to those who lead NHSX and we will deliver on them. 
+I’m genuinely delighted that NHSX has the culture that internal ideas can be nurtured and encouraged. Tons of credit to those people who encouraged the idea and then gave it the necessary thumbs up so I could dedicate a smidgen of my time to it. It fills me with excitement that in the future my colleagues can pitch wonderfully valuable endeavours to those who lead NHSX and we will deliver on them. 
 
 ## What happened next?
 Fortunately lots of my work is building teams, prioritising and scoping work. I also had the small community of practice to piggyback on to help form plans. So I immediately got in touch with someone who knows more than me and we began hustling. As I sit here it’s been 8 days since I looked in my inbox and there was snr sign off to dig further into this. Stuff has happened.
