@@ -38,7 +38,8 @@ At the same time I was working with colleagues on revamping a service called [He
 I knew the question could be deep & messy. Measuring it would be tricky. Would we; 
 - focus on the impact of plastic over paper
 - or how about all the energy required to make the service tick (servers? not using energy on printing? etc)
-- or the effect of lots more data on users that we'd collect and retain it all 
+- how about the [carbon footprint of each email we send](https://carbonliteracy.com/the-carbon-cost-of-an-email/)?
+- or the effect of lots more data on users that we'd collect and retain
 - or the impact of people being able to use cards in more shops than they could the paper vouchers. Which means they may not need to travel as far as they would of to reach a specific store. 
 It was tricky but still very interesting.
 
