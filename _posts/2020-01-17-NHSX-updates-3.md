@@ -17,7 +17,7 @@ I’ve been playing around with the [Pixar format of storytelling](https://mediu
 I was doing my thing helping the [Department and Health and Social Care](https://www.gov.uk/government/organisations/department-of-health-and-social-care) to [create and run great public services](https://www.gov.uk/service-manual/service-standard). It was summer 2018. I was (and still am) a product manager and naturally love knowing all the ins and outs of the things I work on.
 
 ## Everyday…
-I would work with teams, give advice, do a bit of facilitation and offer opinions. We also had the responsibility of assuring what others in the world of health and care were building and buying. This sometimes came in the form of leading a [service assessment](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work).
+I would be working with my team, spending time understanding users, chatting with stakeholders, unblocking things, prioritising, giving advice to other teams, sometimes do a bit of facilitation and often offer opinions and be curious all in the name of iteratively improving services. We also had the responsibility of assuring what others in the world of health and care were building and buying. This sometimes came in the form of leading a [service assessment](https://www.gov.uk/service-manual/service-assessments/how-service-assessments-work).
 
 ## One day…
 I was searching for a [write up of a service assessment](https://www.gov.uk/service-standard-reports) and stumbled upon something very interesting. I noticed that another colleague in the public sector had asked a team a question that would stump me and just about anyone else I knew working in a multidisciplinary team.
@@ -33,9 +33,14 @@ I wanted to know more and potentially have an answer if ever asked.
 
 Cue serendipity. I was at a show and tell and a guest speaker began talking about sustainability and tech. There was even a quiz. They also worked in the NHS. Immediately after I got in touch.
 
-At the same time I was working with colleagues on revamping a service called [Healthy Start](https://www.healthystart.nhs.uk/). Among some of the choices to make the service better we were considering replacing sending lots and lots of paper vouchers (used to exchange for fruit, veg, milk and infant formula) with prepaid cards. The team had [evidence from an alpha phase](https://www.gov.uk/service-standard-reports/apply-for-healthy-start-alpha) why this approach was better but I couldn’t answer if these decisions would be environmentally advantageous.
+At the same time I was working with colleagues on revamping a service called [Healthy Start](https://www.healthystart.nhs.uk/). Among some of the choices to make the service better we were considering replacing sending lots and lots of paper vouchers (used to exchange for fruit, veg, milk and infant formula) with prepaid cards. The team had [evidence from a discovery and alpha phase](https://www.gov.uk/service-standard-reports/apply-for-healthy-start-alpha) why this approach was better but I couldn’t answer if these decisions would be environmentally advantageous.
 
-I knew the question could be deep & messy. Measuring it would be tricky. Would we focus on the impact of plastic over paper, or how about all the energy required to make the service tick given the changes, or the effect of lots more data on spend, usage we'd collect and store even all the way to the impact of people being able to use cards in more places so they don’t need to travel as far as they would to use their paper vouchers in specific stores. It was tricky but still very interesting.
+I knew the question could be deep & messy. Measuring it would be tricky. Would we; 
+- focus on the impact of plastic over paper
+- or how about all the energy required to make the service tick (servers? not using energy on printing? etc)
+- or the effect of lots more data on users that we'd collect and retain it all 
+- or the impact of people being able to use cards in more shops than they could the paper vouchers. Which means they may not need to travel as far as they would of to reach a specific store. 
+It was tricky but still very interesting.
 
 I asked if others knew an answer, I read a lot and asked around for help (thinking it could be a really fun little side hustle or task for someone if they had more capacity than me). I am not sure I ever got an answer that satisfied me.
 
