@@ -3,7 +3,7 @@ layout: post
 title:  "Climate, tech and the NHS"
 date:   2020-01-17
 excerpt: "How I got involved and why I pitched an idea"
-tag: [NHSX] [Climate]
+tag: [NHSX, Climate]
 comments: false
 ---
 On Wednesday myself and some smart colleagues sat down and made plans about how to make the tech ecosystem in the NHS more sustainable. We will do more work but first I want to write up how we ended up in a small meeting room in Leeds hashing out plans. 
