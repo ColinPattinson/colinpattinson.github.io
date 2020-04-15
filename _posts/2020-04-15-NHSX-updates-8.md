@@ -73,7 +73,7 @@ Likewise, a brutal reality is, that we had to move forward acknowledging we had 
 Thankfully we lucked out with many smart, curious, tirelessly hard working people in the team who always put thought into how our service would work or in some cases falter. Many had a ton of experience delivering stuff within the landscape of health and care so we were not entirely in the dark. When we were and didn’t know the answer it is also good to be honest and these can go on a list to explore, unpick and hopefully will result in a better service. 
 
 ### Good services
-[Lou Downe’s ever help list of principles](https://blog.louisedowne.com/2018/06/14/15-principles-of-good-service-design/) are good to stay true to. I always find it important to keep in mind but the top 3 that really appealed this time around were;
+[Lou Downe’s ever helpful list of principles](https://blog.louisedowne.com/2018/06/14/15-principles-of-good-service-design/) are good to stay true to. I always find it important to keep in mind but the top 3 that really appealed this time around were;
 - Enable a user to complete the outcome they set out to do
 - Require the minimum possible steps to complete
 - Be consistent throughout
@@ -90,7 +90,7 @@ Over one weekend we also had a handful of us trying our best to write as plainly
 ### Show the thing
 Maybe one of the more powerful principles we relied upon. By the end of the day 1 I believe a prototype existed. This couldn’t be done without the [GOV.UK prototyping kit](https://govuk-prototype-kit.herokuapp.com/docs) and [design system](https://design-system.service.gov.uk/) (in addition being to reuse/repurpose parts of services was incredibly incredibly important) .
 
-_Tangent:_ I really enjoyed Jame’s tweet which expands this point, within NHS context, with far more aplomb than I ever could…
+_Tangent:_ I really enjoyed James's tweet which expands this point, within NHS context, with far more aplomb than I ever could…
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I asked <a href="https://t.co/qYZZCQqDF1">https://t.co/qYZZCQqDF1</a> colleagues what&#39;s changed in the last 2-3 years that&#39;s helping us respond to the coronavirus situation in the way we are now.<br><br>Or, to put it another way, which old bits of tech/design/process would only hold us back if they were still in place. 1/n</p>&mdash; James Higgott (@jiggott) <a href="https://twitter.com/jiggott/status/1243580032007704577?ref_src=twsrc%5Etfw">March 27, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -113,10 +113,11 @@ Here are some extra reflections and tips that I think were useful...
 One thing I helped instigate was the team participating in a consequence scanning workshop. It’s fab but crucially it worked even in the tightest of time frames. It allowed a mix of professionals to unpick the consequences of our service. It left us with a handful of actions that went in the backlog. 
 
 ### Tools…
-Lots of Slack - who helpfully [upgraded our workspace for free](https://www.businessinsider.com/slack-paid-plan-free-teams-fighting-coronavirus-pandemic-2020-3?r=US&IR=T)
-Lots of G-suite (google docs, sheets, hangouts, etc)
-Lots of mapping on Miro
-Paper, pens & scribbles
+All of this using...
+- Lots of Slack - who helpfully [upgraded our workspace for free](https://www.businessinsider.com/slack-paid-plan-free-teams-fighting-coronavirus-pandemic-2020-3?r=US&IR=T)
+- Lots of G-suite (google docs, sheets, hangouts, etc)
+- Lots of mapping on Miro
+- Paper, pens & scribbles
 
 ### A fantastic team
 One thing that got us through was camaraderie & hustle. Everyone was skilled, passionate, good natured and rose to the challenge. It was insanely motivating to watch people be great and collaborate intensely. This is obviously incredibly fortunate to have but it’s important. We had a cross-organisation team that always kept a high spirit despite the demands. 
