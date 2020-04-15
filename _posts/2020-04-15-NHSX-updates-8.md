@@ -120,4 +120,6 @@ All of this using...
 - Paper, pens & scribbles
 
 ### A fantastic team
-One thing that got us through was camaraderie & hustle. Everyone was skilled, passionate, good natured and rose to the challenge. It was insanely motivating to watch people be great and collaborate intensely. This is obviously incredibly fortunate to have but it’s important. We had a cross-organisation team that always kept a high spirit despite the demands. 
+One thing that got us through was camaraderie & hustle. Everyone was skilled, passionate, good natured and rose to the challenge. It was insanely motivating to watch people be great and collaborate intensely. This is obviously incredibly fortunate to have but it’s important. 
+
+We were blessed by having a cross-organisation team that always kept a high spirit despite all the demands. They are still working hard and continuing to the make the service better. 
