@@ -11,7 +11,7 @@ comments: false
 _Caveat: lots of amazing people continue to work hard and do amazing things. Like any normal human they are in my thoughts as I wrote this._
 
 # Delivering in a pandemic
-I’m one of the many people who have worked or are working on [a coronavirus related service](http://www.legislation.gov.uk/ukpga/2020/7/part/1/crossheading/emergency-volunteers/enacted).
+I’m one of the many people who have worked or are working on a service in the [Coronavirus Act 2020](http://www.legislation.gov.uk/ukpga/2020/7/part/1/crossheading/emergency-volunteers/enacted).
 
 Like many others, the timescales we were dealing with were supercharged. We were given 10 days to deliver a MVP service from scratch. This included finding and rallying a team to actually deliver the thing.
 
