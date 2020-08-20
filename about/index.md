@@ -1,7 +1,13 @@
 # Bio
-I’m a Lead Product Manager working at [NHSX](https://www.nhsx.nhs.uk/) and [the Department of Health and Social Care](https://www.gov.uk/government/organisations/department-of-health-and-social-care). I have worked at the Ministry of Defence, Department of Health (before it became DHSC), Department for Work and Pensions and for UK Parliament.
+I’m a Product Manager working at [Nandos](https://www.nandos.co.uk/). Currently working on creating the fastest, most accessible restaurant menu you can find online.
+
+I have worked at [NHSX](https://www.nhsx.nhs.uk/), [the Department of Health and Social Care](https://www.gov.uk/government/organisations/department-of-health-and-social-care), the Ministry of Defence, Department of Health (before it became DHSC), Department for Work and Pensions and at UK Parliament.
 
 Selection of things I’ve worked on;
+- a [new website for Nandos](https://beta.nandos.co.uk/food/menu/index.html)
+- creating a new service from scratch in the matter of weeks to help bring back skilled volunteers to the NHS during the COVID-19 pandemic
+- a [discovery into children and young people's mental health services](https://nhsx.github.io/Mental-Health/)
+- the [NHSX website](https://www.nhsx.nhs.uk/)
 - the [new website for UK Parliament](https://beta.parliament.uk/)
 - supporting the revamping of [the Healthy Start service](https://digitalhealth.blog.gov.uk/2018/11/08/the-most-valuable-healthy-start-resources/)
 - designing and prototyping services within DWP
