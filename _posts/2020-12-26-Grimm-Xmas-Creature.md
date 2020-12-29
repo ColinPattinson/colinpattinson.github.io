@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Grimm Christmas Creature"
-date:   2020-12-29
+date:   2020-12-26
 excerpt: "A completely silly depiction of what a 2020 Christmas monster could be"
 tag: [Life]
 comments: false
