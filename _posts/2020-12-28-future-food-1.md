@@ -6,7 +6,7 @@ excerpt: "Some trends/predictions of what could happen in food/tech space in 202
 tag: [Life]
 comments: false
 ---
-I work in food/tech and like to keep abreast of what is on the horizon in this space. I’ve grouped together a completely ramshackle list of things *I think* are interesting trends for 2021 and beyond. I am no expert. Here goes part 1 of a 3-parter that nobody asked for...
+I work in food/tech and like to keep abreast of what is on the horizon in this space. I’ve grouped together a completely ramshackle list of things *I think* are interesting trends for 2021 and beyond. I am no expert. Here goes part 1 of a 2-parter that nobody asked for...
 
 # Trends
 I’m going to bypass the big covid-shaped elephant in the room for now and touch on some other areas first.
@@ -47,4 +47,4 @@ Of course it already happens IRL, if a chef knows they have lots of strawberries
 I’m not sure how consumers will react to this type of setup. We deal with it for taxis or flights but without the right messaging it might be a little unpopular to begin with. It’ll also need a thorough exploration into what inequalities this change could entrench or deepen. For example, how this would affect areas termed as ‘[food deserts](https://www.theguardian.com/society/2018/oct/12/more-than-a-million-uk-residents-live-in-food-deserts-says-study)’ where access to affordable fresh healthy food is already pants. It'll need someone smarter than I to unpick.
 
 #### Next?
-Part 2 & 3 will follow soon. Will be more trends & what could be ending up on your plate or delivered to your door in 2021.
+Part 2 will follow soon. Will be more trends & what could be ending up on your plate or delivered to your door in 2021.
