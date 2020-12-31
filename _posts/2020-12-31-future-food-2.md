@@ -39,6 +39,8 @@ If we keep running with the theme that food delivery is still gonna be big in �
 - related to the above… a radical reinvention of delivery food packaging. This is fuelled by people realising that some types of packaging may not help the dishes retain their crispiness or warmth. Thus desire for new types of packaging, perhaps our sustainability commitments also mean plastic tubs, etc see a decline for newer types of packaging.
 - the second point is people investing in the unboxing of food. We’ve lived through [unboxing vids](https://www.theguardian.com/technology/shortcuts/2014/jul/21/unboxing-youtube-phenomenon-videos-unpackaging-toys) and there is evidence out there that people value products more if the experience of unboxing/opening your new product for the first time it is a delightful one. Why not food? The experience of eating is far more than just what goes in your mouth. The smells, the look, the way it is served all are important. Thus, I’m bombastically hoping to see new, interesting ways people receive their food and are delighted when they come to open and serve it.
 
+![A drawing of a box of noodles in a carton box](https://raw.githubusercontent.com/ColinPattinson/colinpattinson.github.io/master/assets/img/noodle%20box.jpg)
+
 ## Will the type of food change?
 Lots of vegan/plant-based foods launched in the past few years. Likely see more, lets throw out a random prediction. Maybe some weirder creations such as... imitation seafood? Someone may take a punt at that in '21.
 
