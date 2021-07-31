@@ -39,7 +39,7 @@ I had a few cracks at this (yes… this did take multiple hours to do & write up
 ![A desk with pens all over it and pieces of paper with lots of dots and scribbles indicating some sort of work in progress](https://raw.githubusercontent.com/ColinPattinson/colinpattinson.github.io/master/assets/img/Pens%20and%20sketches.jpg)
 ![A drawing or piece of art that shows a graph with a colour scheme of red to green but with no words](https://raw.githubusercontent.com/ColinPattinson/colinpattinson.github.io/master/assets/img/Drawing%20of%20data.jpg)
 
-Here is what it could also look like in actual graph form, I’ve added total sleep time time (which is the total seconds of light and deep sleep then calculated into hours) and this the data on a daily level instead of an average weekly score.
+Below is what it could also look like in actual graph form, I’ve added total sleep time (which is the total seconds of light and deep sleep then calculated into hours) and this data is on a daily level rather than an average weekly score.
 <iframe title="Sleep duration and quality" aria-label="chart" id="datawrapper-chart-QcRxV" src="https://datawrapper.dwcdn.net/QcRxV/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
 </script>
 
