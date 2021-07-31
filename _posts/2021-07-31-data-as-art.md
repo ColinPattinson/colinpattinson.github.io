@@ -37,6 +37,7 @@ I used [a sketches app](https://tayasui.com/sketches/) to draw out the data. I w
 I had a few cracks at this (yes… this did take multiple hours to do & write up)… 
 
 ![A desk with pens all over it and pieces of paper with lots of dots and scribbles indicating some sort of work in progress](https://raw.githubusercontent.com/ColinPattinson/colinpattinson.github.io/master/assets/img/Pens%20and%20sketches.jpg)
+
 ![A drawing or piece of art that shows a graph with a colour scheme of red to green but with no words](https://raw.githubusercontent.com/ColinPattinson/colinpattinson.github.io/master/assets/img/Drawing%20of%20data.jpg)
 
 Below is what it could also look like in actual graph form, I’ve added total sleep time (which is the total seconds of light and deep sleep then calculated into hours) and this data is on a daily level rather than an average weekly score.
