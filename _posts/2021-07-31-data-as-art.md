@@ -49,12 +49,19 @@ There are probably more elegant ways to convey what I wanted to but **I’m no a
 
 ## Why do it at all?
 I discovered a set of cataclysmic revelations regarding a former relationship, which then forced life into a long stretch of choppy waters. In the midst of this anguish I became slightly obsessed with making sure I was as well as I could be... and tracking it. 
-Having never warn a watch to sleep before, I began on night 1. I think I did it mostly knowing that one day, as some sort of culmination of the experience. I would be removed from that place and would get to reflect on having grown out of that nightmare.
+Having never worn a watch to sleep before, I began on night 1. I think I did it mostly knowing that one day, as some sort of culmination of the experience, I would be removed from that place and would get to reflect on having grown out of that nightmare.
 Equally, it could be a [predilection to measure](https://colinpattinson.github.io/NHSX-updates-2/) or see it as a messy, geeky form of distraction and therapy.
 
 ### Did I do any more?
 Yes, I’ve played around with a few of these (for example, a few months ago I pulled my spotify data to chart the most played tracks during this period of my life). In some ways they all feel a bit like writing out letters that one never sends. This one is now the exception. 
 I doubt I will share more. 1 being published is enough. I am well enough to move onto more frivolous things to measure in the future.
+    
+## Conclusion
+Sleep is important. I've been reading '[Why we sleep](https://en.wikipedia.org/wiki/Why_We_Sleep)' and it is full of interesting insights into the damage of not sleeping well. The author writes;
+    
+> When sleep is abundant, minds flourish. When it is deficient, they don't.
+    
+Well this blog post is all about flourishing and thus I've been trying some tweaks to my night time routine to improve sleep throughout 2021. Looking at the data... these modifications seem to be helping. 
 
 #### Final note
 A fleeting motivation to publish something like this has been hovering on the horizon for a few months now but this post is the plunge in the deep end. I write this [in the shadow of some incredibly brave women](https://www.theguardian.com/sport/2021/jul/28/simone-biles-receives-praise-for-prioritising-her-mental-health) putting their well-being first on one of the grandest public stages. If they can do it then I should be able to muster the courage to publish on a blog that few will stumble on. 
