@@ -48,13 +48,13 @@ Below is what it could also look like in actual graph form, I’ve added total s
 There are probably more elegant ways to convey what I wanted to but **I’m no artist**.
 
 ## Why do it at all?
-I discovered a set of cataclysmic revelations regarding a former relationship, which then forced life into a long stretch of choppy waters. In the midst of this anguish I became slightly obsessed with making sure I was as well as I could be... and tracking it. 
+I discovered a set of cataclysmic revelations regarding a former relationship, which then forced life into a long stretch of choppy waters. In the midst of this I became slightly obsessed with making sure I was as well as I could be... and tracking it. 
 Having never worn a watch to sleep before, I began on night 1. I think I did it mostly knowing that one day, as some sort of culmination of the experience, I would be removed from that place and would get to reflect on having grown out of that nightmare.
 Equally, it could be a [predilection to measure](https://colinpattinson.github.io/NHSX-updates-2/) or see it as a messy, geeky form of distraction and therapy.
 
 ### Did I do any more?
 Yes, I’ve played around with a few of these (for example, a few months ago I pulled my spotify data to chart the most played tracks during this period of my life). In some ways they all feel a bit like writing out letters that one never sends. This one is now the exception. 
-I doubt I will share more. 1 being published is enough. I am well enough to move onto more frivolous things to measure in the future.
+I doubt I will share more. 1 being published is enough. Content for more frivolous things to measure in the future.
     
 ## Conclusion
 Sleep is important. I've been reading '[Why we sleep](https://en.wikipedia.org/wiki/Why_We_Sleep)' and it is full of interesting insights into the damage of not sleeping well. The author writes;
