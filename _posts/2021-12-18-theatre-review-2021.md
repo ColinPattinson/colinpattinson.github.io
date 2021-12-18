@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Theatre 2021"
-date:   2021-12-02
+date:   2021-12-18
 excerpt: "Ranking trips to the theatre"
 tag: [Life]
 comments: false
