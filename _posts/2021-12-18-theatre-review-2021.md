@@ -35,7 +35,8 @@ Loved the all female cast, loved the setting. Been reading a lot of Greek mythol
 
 > Based on the classic DreamWorks Animation film and featuring Stephen Schwartz’s “miraculous music” (Time Out) – including his Academy Award®-winning song ‘When You Believe’ – and Sean Cheesman’s “astonishing choreography” (The Guardian), this epic production with a cast and orchestra of more than 60 artists tells an inspiring tale of resilience and hope. 
 
-Now… let's not beat around the bush… this is total pants. Most of it was just plain silly… however,I hung out with the legend that is [Sharan](https://twitter.com/sharandhaliwal) ( [she wrote a book that you should buy](https://www.waterstones.com/book/burnt-roti/sharan-dhaliwal/9781784884390) ) and it was a hoot filled with most giggles and snacks. I’d give it credit for an actual very tastefully done presentation of plague deaths and high production finale. Also at the end the actors blasted gov policies of the arts. Was not the first show when the actors went rogue to make a political point (which I applaud their bravery).
+Now… let's not beat around the bush… this is total pants. 
+of it was just plain silly… however,I hung out with the legend that is [Sharan](https://twitter.com/sharandhaliwal) ( [she wrote a book that you should buy](https://www.waterstones.com/book/burnt-roti/sharan-dhaliwal/9781784884390) ) and it was a hoot filled with many giggles and snacks. I’d give it credit for an actual very tastefully done presentation of plague deaths and high production finale. Also at the end the actors blasted gov policies of the arts. Was not the first show when the actors went rogue to make a political point (which I applaud their bravery).
 
 **9) [Manor](https://www.nationaltheatre.org.uk/shows/manor) (National Theatre)**
 
@@ -69,11 +70,11 @@ Loved the book originally. Production values are extremely good. I think this is
 
 > A timely and timeless new musical about struggling to connect in a hyperconnected world, DEAR EVAN HANSEN is the winner of 3 Olivier Awards for BEST NEW MUSICAL, BEST ORIGINAL SCORE and BEST ACTOR.
 
-I’d never seen this before. It’s kinda an odd story as it plays out. Evan Hansen doesn’t really get the karma he might deserve (hot take) but other than that it is really fab. Great songs, good production. Hits the expectation I had of it.
+I’d never seen this before. It’s kinda an odd story as it plays out. Evan Hansen doesn’t really get the karma he might deserve (hot take) but other than that it is really fab. Great songs, good production. Hit the expectation I had of it.
 
-**3) [A Normal Heart](https://www.nationaltheatre.org.uk/shows/the-normal-heart) (National Theatre)**
+**3) [The Normal Heart](https://www.nationaltheatre.org.uk/shows/the-normal-heart) (National Theatre)**
 
-![A Normal Heart poster with two main actors](https://images.jg-cdn.com/image/15121e7d-3880-4909-bd8a-5d9f8a5894fa.jpg?template=PagesUIFeatureImage)
+![The Normal Heart poster with two main actors](https://images.jg-cdn.com/image/15121e7d-3880-4909-bd8a-5d9f8a5894fa.jpg?template=PagesUIFeatureImage)
 
 > Love, anger and activism during the 1980s AIDS crisis. A new virus is infecting gay men across New York City. As the rising death toll is ignored by the government and the medical establishment, fear and confusion turns to rage and division. Using this anger, writer and activist Ned Weeks sets out to unite the community in their fight for recognition and right to survive.
 
@@ -92,7 +93,6 @@ A total surprise. Absolutely loved it. Listened to the soundtrack quite a lot th
 **1) [Anything Goes](https://www.barbican.org.uk/whats-on/2022/event/anything-goes) (Barbican Theatre)**
 
 ![Anything goes promo image with singers and dancers](https://www.touristengland.com/wp-content/uploads/2021/06/Anything-Goes-extension.jpg)
-)
 
 > Featuring a 50 strong cast and ensemble of the finest we have to offer on the London stage (including tap dancing sailors!) and a full-sized live orchestra, this uplifting production of Anything Goes features heart-warming romance, farcical fun and spectacular show stopping dance routines.
 
