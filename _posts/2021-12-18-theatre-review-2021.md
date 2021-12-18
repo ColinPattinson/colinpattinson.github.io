@@ -35,8 +35,7 @@ Loved the all female cast, loved the setting. Been reading a lot of Greek mythol
 
 > Based on the classic DreamWorks Animation film and featuring Stephen Schwartz’s “miraculous music” (Time Out) – including his Academy Award®-winning song ‘When You Believe’ – and Sean Cheesman’s “astonishing choreography” (The Guardian), this epic production with a cast and orchestra of more than 60 artists tells an inspiring tale of resilience and hope. 
 
-Now… let's not beat around the bush… this is total pants. 
-of it was just plain silly… however,I hung out with the legend that is [Sharan](https://twitter.com/sharandhaliwal) ( [she wrote a book that you should buy](https://www.waterstones.com/book/burnt-roti/sharan-dhaliwal/9781784884390) ) and it was a hoot filled with many giggles and snacks. I’d give it credit for an actual very tastefully done presentation of plague deaths and high production finale. Also at the end the actors blasted gov policies of the arts. Was not the first show when the actors went rogue to make a political point (which I applaud their bravery).
+Now… let's not beat around the bush… this is total pants. Most of it was just plain silly… however, I hung out with the legend that is [Sharan](https://twitter.com/sharandhaliwal) ( [she wrote a book that you should buy](https://www.waterstones.com/book/burnt-roti/sharan-dhaliwal/9781784884390) ) and it was a hoot filled with many giggles and snacks. I’d give it credit for an actual very tastefully done presentation of plague deaths and high production finale. Also at the end the actors blasted gov policies of the arts. Was not the first show when the actors went rogue to make a political point (which I applaud their bravery).
 
 **9) [Manor](https://www.nationaltheatre.org.uk/shows/manor) (National Theatre)**
 
