@@ -3,7 +3,7 @@ layout: post
 title:  "Future Food: Part 1"
 date:   2020-12-28
 excerpt: "Some trends/predictions of what could happen in food/tech space in 2021 and beyond"
-tag: [Life]
+tag: [Nandos]
 comments: false
 ---
 I work in food/tech and like to keep abreast of what is on the horizon in this space. I’ve grouped together a completely ramshackle list of things *I think* are interesting trends for 2021 and beyond. I am no expert. Here goes part 1 of a 2-parter that nobody asked for...
