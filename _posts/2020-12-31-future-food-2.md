@@ -3,7 +3,7 @@ layout: post
 title:  "Future Food: Part 2"
 date:   2020-12-31
 excerpt: "Food/tech trends and predictions in 2021 and beyond"
-tag: [Life]
+tag: [Nandos]
 comments: false
 ---
 This is part 2 of a series, [Part 1 was ramshackle](https://colinpattinson.github.io/future-food-1/) so lets all hope this one is a bit better & more succinct. This post looks into what could be happening in restaurant kitchens and the food being served to you in 2021...
