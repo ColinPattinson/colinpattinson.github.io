@@ -69,7 +69,7 @@ The reports also try figure out how low-carbon your hosting is. They say…
 As I type we are getting a 76% low carbon score. The worst culprits to drag the average down are third-parties. Mostly analytics related.
 
 ## Comparisons
-The service has [a few ways to compare](https://ecoping.earth/indexes). I was mostly looking at the most popular list for this mini experiment.
+The service has [a few ways to compare](https://ecoping.earth/indexes). I was mostly looking at the most popular websites list for comparisons while doing this mini experiment.
 
 # Suggested actions to improve
 Overall the page scored pretty well according to EcoPing. We’d invested time in making it performant so that is a relief. It does however give some suggestions (that look generic to lighthouse suggestions to my eyes).
