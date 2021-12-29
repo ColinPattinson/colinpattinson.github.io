@@ -75,7 +75,7 @@ The service has [a few ways to compare](https://ecoping.earth/indexes). I was mo
 Overall the page scored pretty well according to EcoPing. We’d invested time in making it performant so that is a relief. It does however give some suggestions (that look generic to lighthouse suggestions to my eyes).
 
 They include;
-- Reduce unused JavaScript (a classic)
+- Reduce unused JavaScript
 - Sort out the font
 
  I shall enquire about fonts.
