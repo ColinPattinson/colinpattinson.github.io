@@ -7,7 +7,7 @@ tag: [Kry]
 comments: false
 ---
 # Kick-off week
-I was asked by a colleague the other day for advice on how to run an intro/kick-off for a brand new team and what activities I typically do. I ended up splurging too much info in Slack. In this post I shall attempt to unravel my current go-to list of activities and some principles I’ve learned along the way in getting a bunch of strangers focused on delivering valuable stuff, remotely & within a few days. Here goes...
+I was asked by a colleague the other day for advice on how to run a kick-off day for a brand new team and what activities I typically do. I ended up splurging too much info in Slack. In this post I shall attempt to share my current go-to list of activities and some principles I’ve learned along the way in getting a bunch of strangers focused on delivering valuable stuff, remote-first & within a few days. Here goes...
 
 ## Principles
 It’s not my first rodeo to get new teams up and running. Via feedback over the years, I’ve got some general rules I typically follow:
