@@ -31,6 +31,8 @@ So with those principles in mind. I typically am super transparent to people wha
 - Know more about each other
 - Collectively agree on ways of working
 
+![Man delivering a remote meeting with 4 other others with their cameras on and visible from within the meeting. All looking happy](https://images.unsplash.com/photo-1612831455359-970e23a1e4e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80)
+
 ### Purpose of the team
 The first couple of sessions on the first day typically centre on the following.
 
