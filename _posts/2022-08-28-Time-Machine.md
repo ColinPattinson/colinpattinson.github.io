@@ -47,7 +47,7 @@ Interesting. Lets see what a machine & I can concoct…
 
 My favourites are…
 
-![A Roman in toga shaking fist in Ancient Roman Style](https://github.com/ColinPattinson/colinpattinson.github.io/blob/master/assets/img/DALL%C2%B7E%202022-08-28%2013.27.12%20-%20A%20gloomy%20old%20man%20wearing%20a%20toga%2C%20shaking%20fist%20at%20a%20sundial%2C%20outdoors%2C%20in%20Roman%20Empire%2C%20in%20the%20style%20of%20an%20ancient%20Roman%20mosaic%20-min.png?raw=true)
+![A Roman in toga shaking fist in Ancient Roman Style](https://github.com/ColinPattinson/colinpattinson.github.io/blob/master/assets/img/DALL%C2%B7E%202022-08-28%2013.27.12%20-%20A%20gloomy%20old%20man%20wearing%20a%20toga,%20shaking%20fist%20at%20a%20sundial,%20outdoors,%20in%20Roman%20Empire,%20in%20the%20style%20of%20an%20ancient%20Roman%20mosaic%20-min.png?raw=true)
 
 ![A Roman looking gloomily at a sun dial in hand](https://github.com/ColinPattinson/colinpattinson.github.io/blob/master/assets/img/DALL%C2%B7E%202022-08-28%2013.12.22%20-%20A%20gloomy%20old%20man%20wearing%20a%20toga,%20shaking%20fist%20at%20a%20sundial,%20outdoors,%20in%20Roman%20Empire,%20in%20the%20style%20of%20an%20ancient%20Roman%20painting-min.png?raw=true)
 
