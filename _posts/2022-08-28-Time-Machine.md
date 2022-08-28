@@ -2,7 +2,7 @@
 layout: post
 title:  "The Time Machine"
 date:   2022-08-28
-excerpt: "Playing with DALL-E 2 to generate original images from text"
+excerpt: "Playing with DALL-E 2 to generate some original images from text inspired by a podcast about time"
 tag: [Life]
 comments: false
 ---
