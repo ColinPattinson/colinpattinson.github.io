@@ -1,7 +1,7 @@
 # Bio
-I’m a Product Manager working at [Nandos](https://www.nandos.co.uk/). Currently working on creating the fastest, most accessible restaurant menu you can find online.
+I’m a Senior Product Manager working at [Kry](https://www.kry.se/en/). Currently helping clinicians to conduct video, voice & chat consultations and messaging to patients. 
 
-I have worked at [NHSX](https://www.nhsx.nhs.uk/), [the Department of Health and Social Care](https://www.gov.uk/government/organisations/department-of-health-and-social-care), the Ministry of Defence, Department of Health (before it became DHSC), Department for Work and Pensions and at UK Parliament.
+I have worked at [Nando's](https://www.nandos.co.uk/), [NHSX](https://www.nhsx.nhs.uk/), [the Department of Health and Social Care](https://www.gov.uk/government/organisations/department-of-health-and-social-care), the Ministry of Defence, Department of Health (before it became DHSC), Department for Work and Pensions and at UK Parliament.
 
 Selection of things I’ve worked on;
 - a [new website for Nandos](https://beta.nandos.co.uk/food/menu/index.html)
