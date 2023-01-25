@@ -3,7 +3,7 @@ I’m a Senior Product Manager working at [Kry](https://www.kry.se/en/). Current
 
 I have worked at [Nando's](https://www.nandos.co.uk/), [NHSX](https://www.nhsx.nhs.uk/), [the Department of Health and Social Care](https://www.gov.uk/government/organisations/department-of-health-and-social-care), the Ministry of Defence, Department of Health (before it became DHSC), Department for Work and Pensions and at UK Parliament.
 
-Selection of things I’ve worked on;
+## Selection of things I’ve worked on;
 - a [new website for Nandos](https://beta.nandos.co.uk/food/menu/index.html)
 - creating a new service from scratch in the matter of weeks to help bring back skilled volunteers to the NHS during the COVID-19 pandemic
 - a [discovery into children and young people's mental health services](https://nhsx.github.io/Mental-Health/)
@@ -16,4 +16,9 @@ Selection of things I’ve worked on;
 - building data science capability in the Royal Navy
 - part of a [winning team working on an innovation challenge](https://digitalhealth.blog.gov.uk/2016/12/20/ibm-challenge/)
 
+### Education
 Before Parliament and Government I studied at the University of Sheffield, Tsinghua University and the University of Southampton. I've lived and worked in Korea and China. Born in Newcastle and raised mostly in Northumberland.
+
+#### Want to know more...
+Here is a recent CV
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vQ99UsdMZ6RgWVuUJ7Fp5ul0pjUEK5brg4tHtcZy3FGv7EmrfXFZ5_nq8MIEHAOqKNr0_0ZToFd3t3o/pub?embedded=true"></iframe>
