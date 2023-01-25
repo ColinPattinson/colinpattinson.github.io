@@ -18,7 +18,3 @@ I have worked at [Nando's](https://www.nandos.co.uk/), [NHSX](https://www.nhsx.n
 
 ### Education
 Before Parliament and Government I studied at the University of Sheffield, Tsinghua University and the University of Southampton. I've lived and worked in Korea and China. Born in Newcastle and raised mostly in Northumberland.
-
-#### Want to know more...
-Here is a recent CV:
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vQ99UsdMZ6RgWVuUJ7Fp5ul0pjUEK5brg4tHtcZy3FGv7EmrfXFZ5_nq8MIEHAOqKNr0_0ZToFd3t3o/pub?embedded=true"></iframe>
