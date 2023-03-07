@@ -36,7 +36,7 @@ Very recently we made a switch of provider in a particular market after I got cu
 Results included:
 - 54.6% cost reduction
 - Higher patient satisfaction grade
-- Reduced no shows from 6.8% for the previous 12 weeks down to 4%.
+- Reduced no shows by 41.2%
 
 It’s mundane work perhaps and not the most sexy work but results are results. 
 
