@@ -239,4 +239,4 @@ After reflecting and writing all of the above I think I can summarise some key f
 
 Apparently if I do [a search on what stations are like this in the world](https://chat.openai.com/share/880f3b1f-f69f-4008-ab7a-a099b5ee13b1) then it tells me New York’s Grand Central station is my match. A fine station indeed! 
 
-![Main concourse of New York’s Grand Central station. Lots of marble, high ceilings, empty, bathed in natural light](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/GCT_in_Blizzard_of_2015.jpg/640px-GCT_in_Blizzard_of_2015.jpg)
+![Main concourse of New York’s Grand Central station. Lots of marble, high ceilings, empty, bathed in warm lighting](https://islandinthenet.com/wp-content/uploads/2021/01/NIKON_D5100_20130622_160_1_2_HDR_LuminarAI-edit.jpg)
