@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Food & drink on my Euro Adventure 2023"
-date:   2023-06-04
+date:   2023-06-22
 excerpt: "A look back on the random pictures I took of eating out for a month"
 tag: [Life]
 comments: false
