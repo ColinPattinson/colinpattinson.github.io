@@ -158,7 +158,7 @@ My final meal was a little grilled chicken dish in the baking heat. It was actua
 6.8/10. So many dishes, so hard to score. Some gems but a lot of meh. 
 
 ## Slovenia
-Found a sunny spot on my first night and got a few nice beers and ate a burger (not something I usually eat but perhaps the long travel days brought it out in me). The waiter told me this is what they were famous for so I just went with what he told me I should order.
+Found a sunny spot on my first night and got a few nice beers and ate a burger (not something I usually eat despite already appearing in this post but perhaps the long travel days brought it out in me). The waiter told me this is what they were famous for so I just went with what he told me I should order.
 
 ![Lone Wolf Single Hop IPA bottle and glass with beer in the sunshine with tree in distance](https://lh3.googleusercontent.com/pw/AJFCJaXofUHiZhL0WOfCETMQ2VuGR6SaM-Ebnh4c0qaqD6neOfy6sohNbc4J4ETC5aPUZYe8T_Psmhkh3m1wjVnRozNOUfOfgIkzR78mvxsMkgKRXOBhbP6q6TvNFSL7o3tpGVan5G1smKfxAfP7V_N6Ya6XVA=w743-h986-s-no?authuser=0)
 
@@ -204,7 +204,7 @@ Traditional sandwich at Vienna station. It’s sort of like meat loaf? I actuall
 8/10. Can’t really fault these two. Maybe a bit overkill on the pork side of things.
 
 ## Switzerland
-Ohh this looks odd. First night in Switzerland after a very long journey to get there (including a night train). Bit odd but I had curry wurst again. I think I was knackered at this point but it was basic. Fine, nothing more.
+Ohh this looks odd. First night in Switzerland after a very long journey to get there (including a night train). Bit strange but I had curry wurst again. I think I was knackered at this point but it was basic. Fine, nothing more.
 
 ![Curry wust with chips on black tray and a coke bottle in background](https://lh3.googleusercontent.com/pw/AJFCJaW_ZxwZaq8V-Fl1eUHry-_x_RiyYIezlkXMU28C0T0y3NhCIfPTVHNJom0vNikCiB4SecXuNmN7qqLstKQ2p_WSLOCMva_y037hEHBaZY9OSeKtuh8qjyOO8DeDrQlQo_DipAPW4X_oHbJsxml90nEsxw=w743-h986-s-no?authuser=0) 
 
@@ -220,15 +220,15 @@ Gyoza! In Switzerland. I know. What was I playing at. It was walloping it down o
 3.1/10. What can I say? None of these impressed me. I did eat some good stuff in Switzerland but it is not here. All of this was expensive and not impressive.
 
 ## France
-Lovely France with some great beer and food. First was a sunny beer in Lyon. Look at this beauty.
+Lovely France with some great beer and food. First was a sunny beer in Lyon. Look at this beauty. Local Lyon beer.
 
 ![Amber beer in glass with sun shining on a red table](https://lh3.googleusercontent.com/pw/AJFCJaWCISJLE6jJAvvvkiEkzFkYNULB_n0Vd48RkA4OZGx-0Z-uDsd_jaJq0N80zWG_Kh2U054MWnN4EIRWSIXeV4lEpeEu4bvzLF5Zu2ixJ1eDLW0PF5TP0B4dQwUqZZJEIzWvo957xlUUa1D2DDtvrVMzcg=w743-h986-s-no?authuser=0)
 
-Then down to Lille & I sampled some local cuisine. They have a sort of stroopwafel dish that is pleasant but the cake I got after blew my socks off.
+Then down to Lille & I sampled some local cuisine. Very [beautiful patisserie founded in 1677](https://www.meert.fr/). They have a sort of stroopwafel dish that is pleasant but the cake I got after blew my socks off.
 
 ![Stoopwafel like dish with a coffee next to it](https://lh3.googleusercontent.com/pw/AJFCJaXsObxUbid_W08WqWqaZh50myh7JY1qK29WlkKSm_-ck3WwojbKHTKEEILPpN7YLfrk8e88MUvJGgaHOL0KUzU6xF-FywOTi87zQFFs8Sq7lOyCFL4OoxZdOaaFZIq5wNPst39LNHiPMQ6G9Otp96uX9Q=w743-h986-s-no?authuser=0)
 
-Star of the show was this passion fruit bomb…
+Star of the show was this passion fruit bomb. Description I can find says it includes "crunchy muesli and cranberry, creamy dulcey and passion fruit, passion fruit and yuzu biscuit, whipped vanilla ganache".
 
 ![Cake with three layers. Orange and white colours to indicate cream and passion fruit. On a decorative plate](https://lh3.googleusercontent.com/pw/AJFCJaWQP6klfmGlQwvNPVOcHaJTYutUoFr4wD634__PTB-VXQyLWm2ToEnu9jiXEQLwhdYpYAu4CyQZHUXC9otkd0hQzI88yy0ePwgmGm1s0nzoHm4LKiO8Cgt-OwWdS60YtHaI2582nL36iL0AAGN80H3JrA=w743-h986-s-no?authuser=0)
 
@@ -236,9 +236,11 @@ Star of the show was this passion fruit bomb…
 8.2/10. Mostly cake and beer but they were great cakes and beers!
 
 ## UK
-Back! Met friends to celebrate the arrival. Was at a pub near Borough Market. Obviously when I got back it was all Coronation theming everywhere. Picked up this bang average themed ale to celebrate. 
+Back! Met friends to celebrate my arrival. Was at a pub near Borough Market. Obviously when I got back it was all Coronation theming everywhere. Picked up this bang average themed ale to celebrate. Did not move me but the company solved any woe. 
 
 ![‘Return of the King’ beer on ale pump at pub. Image has King Charles on the branding](https://lh3.googleusercontent.com/pw/AJFCJaWSkMbL7SR0ZyIYIbSCoAlu4ykRI5Ki-taxWCBFV8Z67sd505zASYDnDNRXY7wkWIOfIEiKJNqAU2AKTI6KzWv8Nhmh5JD_KxCls-aQ0lKcfWfDWbM2lPWRIDtGhNL5TApcukv7G8DHwFc6vdkcnVHsYg=w743-h986-s-no?authuser=0)
 
 # Conclusions
-This was long! Any insight I can draw? I should take more photos of my healthier meals plus Switzerland must do better. Shout out to Austria that was a good mix of high quality dishes and easy to get local fare.
+This was long! Any insight I can draw? I should take more photos of my healthier meals plus Switzerland must do better. Shout out to Austria that was a good mix of high quality dishes and easy to get local fare. France has lovely baked goods (shock!) & Slovenia is a delight. 
+
+Fin.
