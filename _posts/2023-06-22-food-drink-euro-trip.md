@@ -6,14 +6,15 @@ excerpt: "A look back on the random pictures I took of eating out for a month"
 tag: [Life]
 comments: false
 ---
-I’ve now written two blog posts already about my mega train adventure earlier this year. One about [the journeys](https://colinpattinson.github.io/euro-trip-1/) and the other ranking my [favourite stations](https://colinpattinson.github.io/best-train-stations/). This blog post will be a bit random. I’ve scoured my photos and found the photos of the meals & drinks I took. 
-It’s a bit splatter gun. I’m not sure why I took photos of some meals/drinks and not others but to commemorate the trip I’ll reflect and score what I have. So here we go… in chronological order…
+I’ve now written two blog posts already about my mega train adventure earlier this year. One about [the journeys I took](https://colinpattinson.github.io/euro-trip-1/) and the other ranking my [favourite stations](https://colinpattinson.github.io/best-train-stations/). This blog post will be a bit random. I’ve scoured my photos and found photos of the meals & drinks I had.
+
+I'm not going to lie though, it’s a bit splatter gun. I’m not sure why I took photos of some meals/drinks and not others but to commemorate the trip I’ll reflect and score what I have. So here we go… in chronological order…
 
 # Food & Drink scores
 Also a word of warning… before you judge me… this probably isn’t going to make me look the healthiest person with these meals! Again, understand this is not my usual diet. I do eat vegetables, do not worry.
 
 ## Belgium
-I only had 1 night here but I found a traditional sort of meatball spot on the way to a nice pub.
+I only had 1 night here but I found a traditional meatball spot (yes, [Belgian meatballs](https://en.wikipedia.org/wiki/Boulets_%C3%A0_la_Li%C3%A9geoise)) on the way to a nice pub.
 
 ![Traditional Belgium Meatballs in a gravy like sauce. Next to them are chips and a blonde beer on a clean table](https://lh3.googleusercontent.com/pw/AJFCJaXPY9Xi_9_Um0goL9peIIeljdrLBZZu_t96TWfK_KpdwZaNu8_7jbpd_e4qJtwF6iNfCbJu-iM4YqwudBZzJCBxmNd-Y6xglMh9Ap9tm71PJDK6Eo-h2UjcT9t4O27YIkySNAGJcrQKVQGEAMts8hU_UA=w743-h986-s-no?authuser=0)
 
@@ -30,20 +31,20 @@ After the meatballs I took a walk to a local bar that had high reviews. I absolu
 I had a few more beers. All excellent as you would expect (some being quite strong) before I moseyed back to the hotel.
 
 ### Rating
-8.6/10. Not the healthiest but absolutely wonderful after a long train journey/treat. I’ll be more generous when the dishes are regional speciliaties. 
+8.6/10. Not the healthiest but absolutely wonderful after a long train journey/treat. I’ll be more generous with scoring when the dishes are regional speciliaties. 
 
 ## Germany
 Bit of a mixed bag but mostly good.  
 
-First up was a burger I had after being stuck on delayed trains all day. I think it was late-ish and I just wanted something before the walk to the hotel. I remember the burger being pretty good and [the place being popular](https://burger-meister.de/menu/?lang=en). I believe that they were semi-famous for cheesy fries so did get a pot of the sauce, I’d say the cheese sauce was maybe overkill.
+First up was a burger after I had been stuck on delayed trains all day. I think it was late-ish and I just wanted something before the walk to the hotel. I remember the burger being pretty good and [the place being popular](https://burger-meister.de/menu/?lang=en). I believe that they were semi-famous for cheesy fries so did get a pot of the sauce, I’d say the cheese sauce was maybe overkill.
 
 ![Burger on metal tray with chips and a pot of cheese sauce with a half drunk bottle of coke](https://lh3.googleusercontent.com/pw/AJFCJaVWqUgw1YNbFAU629dmfTOrYpaLOwnKYl8UBUpDaaHPNubjtMDtJGJfk8haWIQDaT_7qPpl97xvjM7cs-5SaEyqfKu6H-0aggNudSoHCSBc8q09oeA803iJA39aiuvLo8D0_o96cEwD7wiIOwa33IMVXw=w1310-h986-s-no?authuser=0)
 
-Next up with a little vegan brunch place I found on the way to going to some museums. I don’t think I knew the place was exclusively vegan but this is absolutely fine with me. I got my first coffee of the day, blasted a podcast and they delivered this scrambled tofu sandwich that was absolutely delightful. Maybe the top sandwich of the trip! Nicely seasoned/use of spices. 
+Next up with a little vegan brunch place I found on the way to going to some museums. I got my first coffee of the day, blasted a podcast and they delivered this scrambled tofu sandwich that was absolutely delightful. Maybe the top sandwich of the trip! Nicely seasoned/use of spices. Did not care for the olive knifed into the sarnie.
 
 ![Scrambled tofu sandwich on plate next to a coffee](https://lh3.googleusercontent.com/pw/AJFCJaXugcsZEF5FtUIuiW_6JbitqyYzPz-ilWfFi8TuvSnu6z4nRfzGthiCyAPFeSXg-HVDDCaDfRpSKnL4Owxz43nt1d7UmrW9stl40xJ3Bd_UrrnFAtrG5eyIkE5GKEySKWydojh7CMwq7q6befTcWn1B7g=w1310-h986-s-no?authuser=0) 
 
-On the more touristy end of food delights I got myself a currywurst in a cafe in the park. It was just ok, the surroundings were better. Was in the middle of a long walk through Tiergarten. Although towards the end of my meal I saw a man in my eyeline try to find a private spot to wee but I could quite clearly see him. Odd to see that while eating.
+On the more touristy end of food delights I got myself a currywurst in a cafe in the park. Was in the middle of a long walk through Tiergarten. It was just ok, the surroundings were better. Except at the end of my meal when I saw a man in my eyeline try to find a private spot to wee but I could quite clearly see him. Thankfully I had already finished.
 
 ![Sausage with curry sauce and chips on a wooden picnic table in the woods of the Tiergarten](https://lh3.googleusercontent.com/pw/AJFCJaWcmDGRzr2EAQYlTxjUyTYo0N647AcIZIgPouxfAgNEiY7HCHd0IRQTbK-ZVVzov128dEkrxJ7y9m7Ke6E-rk5uOqV8KkvywigCC89yBGRcBPkIzbsMinU2FqYFqe3B05pSBMqPKNwhZPh5pGF8KGlHRg=w743-h986-s-no?authuser=0)
 
@@ -54,18 +55,18 @@ On my final day in Germany I got lunch in a very sunny spot near Potsdamer Platz
 ![Spatzle pasta with cripy onions on top, herbs and a roasted tomato on a black plate](https://lh3.googleusercontent.com/pw/AJFCJaW7XF9V6qTs8973AJ6sy7alIGE5hkljF1qw9odztfiXH00rp9EuRIAmL-60tIHKUUekPakF6A0ruxxDX22JjxFsy2FW_2qqqyG_u-Bai4k2u7Bu5Gdl6qrmz8xXFG4vdfl5MwmUOdXhX3sfMwHwUdk0zQ=w743-h986-s-no?authuser=0)
 
 ### Rating
-7.8/10. Solid all round. Nothing blew my face off but don’t remember being overly disappointed with any of these. I had some average eats while in Berlin but clearly didn’t take a picture of them. Shout out to [the sushi place](https://sushi-goku.de/) that messed up my order and had a TV filming in it while I stood around waiting to get my order.
+7.8/10. Solid all round. Nothing blew my face off but don’t remember being overly disappointed with any of these. I had some average eats while in Berlin but clearly didn’t take a picture of them. Shout out to [the sushi place](https://sushi-goku.de/) that messed up my order while they had a TV crew filming in there while I waited.
 
 ## Austria: Part 1
 I seem to remember Austria being a bit more expensive than Germany. Regardless, I went about trying to eat traditional food where I could. First stop was [a nice spot](https://meisslundschadn.at/meissl-schadn-wien/speisekarte/?utm_source=google&utm_medium=organic&utm_campaign=gmb) where I got a sort of goulash of sorts. It was good. Nice potatoes and crispy onions. Nice sparkling water to wash it down. 
 
 ![Beef Goulash dish, with lots of gravy. Potatoes in dish with bottle of water too](https://lh3.googleusercontent.com/pw/AJFCJaUJK4UAVgm3EGLDMytPUFJ_Kv600Zrf7nvv59Zb1pr8q41uy8y47Qdn3nMktSpeEXreNITcoTtUU1FgsRKWj9WR1CtOecP72eBFM5mQtJSf3P6vhMUKKay-EWS3W75b_7rlwzyox1M0CEXuET-Y2Hh0mg=w743-h986-s-no?authuser=0)
 
-Next stop was schnitzel. Classic. Was a nice little place a little walk from the train station (which I walked to in pouring rain). This place had a bit of a 70’s vibe with everyone in there over 50 but food was great! Solid portions and not overpriced.
+Next stop was schnitzel. Classic. Was a nice little place a little walk from the train station (which I walked to in the pouring rain). This place had a bit of a 70’s vibe with everyone in there over 50 but food was great! Solid portions and not overpriced. Hearty.
 
 ![Pork Schnitzel with boiled potatoes and a dark beer on the table](https://lh3.googleusercontent.com/pw/AJFCJaVTWcJ0NYTr5CdkGhhh6PKQNllCfh9VeuRyox_B9Rd26XhGdv3Mm-W3fY1ZLMY-Y1wefbNrvzlux9rDFW_omd9OPBEZ7ct_iEEaxZQ3TwFNMsTZ80C_NIC9sOQBqoxnpWm95usz994z48Y9rsat3AAulg=w1310-h986-s-no?authuser=0)
 
-On my Vienna tour I also found a spot in the [famous Austrian coffee house Landtmann’s](https://www.landtmann.at/en/the-landtmann/the-landtmann-story.html). I got some traditional sausage and famous dessert. The dessert was a bit heavy and dough-y. A bit too big a portion. Coffee and surroundings very nice. Staff also great.
+On my Vienna wanderings I also found a spot in the [famous Austrian coffee house Landtmann’s](https://www.landtmann.at/en/the-landtmann/the-landtmann-story.html). I got some traditional sausage and famous Austrian dessert. The dessert was a bit heavy and dough-y. A bit too big a portion. Coffee and surroundings very nice. Staff also great.
 
 ![Sausage on a white dish with 4 sauces to dip in and bread](https://lh3.googleusercontent.com/pw/AJFCJaWAEeZ0rwqQQm5ePQn72NQbAAC7DXkRn3nNWrv081EG6b9YnZJX4Iv9wzQk8jzJegA2LKhMD84xnB2zLBHK3s3L0E-xGMtrF5P4JIO-lv_WyS529Tl9uvRZojtmZXtz_-EhX1EDoqOthvSjvcH8R9178Q=w743-h986-s-no?authuser=0)
 
@@ -75,7 +76,7 @@ On my Vienna tour I also found a spot in the [famous Austrian coffee house Landt
 8.1/10. Lots of traditional dishes. Some are a bit, dare I say, bland. Nice but not zinging me with flavour. Absolutely would love these in winter. Very nice, very solid but not life changing.
 
 ## Slovakia
-Bang average little brunch/breakfast this. I think I was just out for a little tourist day and was wanting a coffee and snack before hiking up to the castle. Everything seemed absolutely fine. I think I spectacularly failed trying to say thank you in Slovakian. 
+Bang average little brunch/breakfast this. I think I was just out for a little tourist day and was wanting a coffee and snack before hiking up to the castle. Everything seemed absolutely fine. I think I spectacularly failed trying to say thank you in Slovakian to the waitress which might of flooded me with shame. 
 
 ![Egg croissant on a plate with a coffee that has been drunk and a glass of water](https://lh3.googleusercontent.com/pw/AJFCJaXAepNHRjpcHYG71QZTZDAsh2wYbwXjpP_cNPEUOCZ2QjfEDEJjzjF4qKaqpEqD2uQFSVQJBX8bcXLi4yEhdiGxgHOPQTvoww9-b8Pmbi_1VGS8CWwwrFFlY6k6f3xONRrrDZwh3l00sVg-QEHo2xXrKg=w743-h986-s-no?authuser=0)
 
@@ -95,7 +96,7 @@ For a nicer dinner I went to this place:
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.4083649252207!2d15.439691317443849!3d47.07145500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e3581d9a189ad%3A0x4b4b894f81b5ec12!2sGasthaus%20Stainzerbauer!5e0!3m2!1sen!2suk!4v1687462254287!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-It was actually very good to great. Got a few courses and had one of the funniest seats at a restaurant I’ve ever had. Sort of sat in a spot that made it look like I worked there manning the cloakroom. 
+It was actually very good to great. Got a few courses and had one of the funniest seats at a restaurant I’ve ever had. Sort of sat in a spot that made it look like I worked there manning the cloakroom (yes, someone did ask me to check their coat). There was some traditional chicken and I ordered mostly what the waitress told me to. 
 
 ![Chicken with mash potato and a beer](https://lh3.googleusercontent.com/pw/AJFCJaUWE3WKxnnagCb6R-5KFLtocjOlxWveHrGDuxiKCQSkhRzwzoXWLbi_1Mv2hJVLEqPeh6ETVSVV53kXUo6jwvr7lWGkUdhPoJc0sxVynMrnpeRfdBxkhnWCqWkghD-A_3gzdHJ_kydtv33bdLGIfBMmdA=w743-h986-s-no?authuser=0)
 
@@ -109,7 +110,7 @@ On my last meal before I left to head south I had a local delicacy which is basi
 7.5/10. Some real highs at the nice restaurant but some disappointments. Nothing bad in the slightest though.
 
 ## Croatia
-OK, first is a dish I still have no idea what it is. It was sold to me as an innovative place that did fusion and I think this was Mexican inspired. It didn’t taste bad. Was a bit like a burger/kebab to be honest but not something I’d order again.
+OK, first is a dish I still have no idea what it is. It was sold to me as an innovative place that did fusion and I think this was Mexican inspired. It didn’t taste bad. Was a bit like a burger/kebab. To be honest it is not something I’d order again.
 
 ![A sort of bready taco that has minced beef and green sauce. 3 of them next to each other](https://lh3.googleusercontent.com/pw/AJFCJaXjJ8-Rm_I-wXfExG-Z4yBJ1bZX9ztVJoQVRQjawOZqb5V_dveuVTyMIUJriWaA6UKpuW9LuOWngifg6xJLMzuV6qYf_CohkP6F_m_xLmPxMmiS9LLXd90vn4GB2yEahnUn3AoUS2DRs0LbySuAtuj4Lg=w1310-h986-s-no?authuser=0)
 
@@ -129,7 +130,7 @@ After said night train I arrived early morning bleary eyed into Split. I needed 
 
 ![Eggs Benedict on white plate](https://lh3.googleusercontent.com/pw/AJFCJaWEjt801igRXCMeiVV06PEfpbjj1ZXX98o5QJ0bA1N7IZAtq8mVQAc-XZjyu5u5t4J58m5M_YZ9gpMY8qcfsC7kTZSJZf5w6CdSJqHH_9qDeixP9nEuFL0J6CWXEGwXLgYvkkc4m02ANN3rn88E-1p-ow=w743-h986-s-no?authuser=0)
 
-After a long hike, on the way down I found a place to get some squid, salad and some iced tea. This scratched an itch I believe. Had been a hot day out so nice to get some shade and eat some seafood (cannot guarantee how fresh it was but it tasted good).
+After a long hike later on in the trip. On the way down from the peak, I found a place to get some squid, salad and some iced tea. This scratched an itch. Like a bit of squid when on holiday and near the water. Had been a hot day out so nice to get some shade and eat some seafood (cannot guarantee how fresh it was but it tasted good).
 
 ![Fried squid with chips, salad and an iced tea on wooden table](https://lh3.googleusercontent.com/pw/AJFCJaU0YI0x0j4yHJgJXlqAr0PN89vQ59peKjmxhSHzF4UkNpn8QXnsL_jNhPsN6scmdQUU7ojxJdrvt7uMcteK4DH8mbr50n-JiaRYMjR0xzR-X8g_809N228okUx8xtfZAmoopnbN2Xe4vUkNehXdA2Zrtg=w743-h986-s-no?authuser=0)
 
