@@ -13,6 +13,8 @@ Just for clarity’s sake. Broadly, I subscribe to the notion that a service is 
 
 By ‘live’ I mean the service is mostly unrestricted to your target audience. Private beta you’ll likely be throttling users to learn & iterate and still scaling up to allow more people to use your service. ‘Live’ is what comes after. 
 
+![A 'On Air' lit up sign on some wood panelling](https://images.unsplash.com/photo-1628849098583-daaf1f534a29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)
+
 I absolutely am not envisioning that 'live' services that reach it this far are inherently a perfect service that fulfils every need of your user. Maybe you’ve not quite nailed product/market fit or some elements of the journey are somewhat wonky. This is absolutely fine & normal, while you may wind down the amount of people/investment you might have thrown at the problem initially there is typically still work to be done and not every issue addressed.
 
 So… with that hopefully clarified. What do I think should be floating in your brain as you sit there with this live service on your hands.
@@ -79,6 +81,8 @@ All of these are just tools to sense if the team is happy, performing as consist
 ## Incident management
 Being in a live service means at some time, something will go wrong and you & the team will need to deal with it. Over time the team will get better at diagnosing issues but needless to say it can be somewhat stressful when one of the services you own stops working and people are breathing down your neck to get it back up again.
 
+![An explosion with fire across a landscape and blue skies above](https://images.unsplash.com/photo-1588281345136-9893252095bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80)
+
 First advice is to try and nail down some sort of process for incidents early on in the team’s history. Firstly, it’s worth having someone ‘on-call’ so if an incident happens people know whom to contact and be responsible for triaging the issue and coming up with what to do next.
 
 Setting up monitoring of your services to see if they are performing as expected and setting up notifications if things wobble so the team can act fast is also very useful. It’s much better to spot issues early then wait for people to get a bad experience and the organisation to get into a frenzy. 
@@ -114,14 +118,28 @@ One noteworthy point related to retirement is communication to users. Ideally yo
 ### Summary
 Managing a live service is a wonderful phase to work in. You get time and space to refine your service and make users even happier while also doing things like lowering costs & making things run more efficiently. 
 
-Broadly, you should remain curious about solving user needs, tracking is the service performing well, making sure it stays relevant, assessing all component parts to see what improvements can be made, making sure the team stays happy and productive & being able to handle things when they go wrong. 
-
-The biggest differences to previous phases is: 
+I'd say for someone who hasn't spent time in a live phase then the biggest differences to previous phases is: 
 - making your monitoring of real world performance more key to decision making over limited evidence/intuition
 - continue to find joy in making either smaller incremental tweaks to your service or investing time in more knotty wider service issues rather than big splashy releases
 - taking more time to establish stable foundations to make sure the service can run smoothly rather than moving fast with compriomises
 - thinking about it's long-term future and potential end then hustling to make it a reality
 - getting it to a point that it doesn't really need you anymore and you don't become a focal point for the service to exist
+
+If thrown right in the deep end and I had to give you a a checklist of questions you can ask yourself then it would be:
+- who are the users of the service and what value are they getting from the service?
+- is it performing as well as it used to or are there any signs of under performance? 
+- what else has the team found that your users could need to help complete their journey more effectively?
+- what other users might have been overlooked and worth investing more time into to improve the service?
+- does the whole journey work well across all channels and with the rest of your organisations services?
+- is the service still relevant and what are others doing anything different?
+- when mapped, what parts of the services can be made better/are redundant or made cheaper?
+- are there any key dates the organisation should keep track of, e.g. when do contracts end?
+- is the team happy and still performing at a high level?
+- if the service went down suddenly, what's your process to fix it?
+- if you and the team were hit by a bus could someone pick up the service and change things?
+- should it exist at all?
+
+The list isn't exhaustive but might get you a better picture of what you're dealing with.
 
 I no longer remember who said this but I'll end on a quote I've always enjoyed...
 > You learn most when it's live
