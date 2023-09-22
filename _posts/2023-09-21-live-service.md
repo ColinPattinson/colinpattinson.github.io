@@ -125,6 +125,7 @@ The biggest differences to previous phases is:
 
 I no longer remember who said this but I'll end on a quote I've always enjoyed...
 > You learn most when it's live
+
 I think this is true. Having something out there in the wild is a brilliant culmination of lots of hard work but is by no means the end of a journey, simply the start of a new one where you get to learn more and make even more things better.
 
 #### EXTRA: Your own growth
