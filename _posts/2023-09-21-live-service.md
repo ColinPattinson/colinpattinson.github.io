@@ -125,7 +125,9 @@ The biggest differences to previous phases is:
 
 I no longer remember who said this but I'll end on a quote I've always enjoyed...
 > You learn most when it's live
-I think this is true. Having something out there in the wild is a brilliant culmination of lots of hard work but is by no means the end of a journey, simply the start of a new one where you get to learn more and make even more things better.
 
-#### EXTRA: Your own growth
+I think this is true. 
+Having something out there in the wild is a brilliant culmination of lots of hard work but is by no means the end of a journey, simply the start of a new one where you get to learn more and make even more things better.
+
+#### _EXTRA: Your own growth_
 After re-reading this blog post I'm adding in an extra section. IMO you want to have a role that you are passionate about and are continually learning something. It's entirely possible that you'll max out this feeling if you remain in the team for a very long stretch. Like any annoying product manager I love a good matrix and this one talks about a way to sense [if it's a good time to move on or not](https://sarah-weiler.medium.com/knowing-when-to-quit-introducing-the-quitting-quadrant-model-37ff083f12a2). Your team will be naturally thinking the same thing so if you do intend to stick around then plan ahead for team changes and succession plans.
