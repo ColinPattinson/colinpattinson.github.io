@@ -1,9 +1,11 @@
 # Bio
-I’m a Senior Product Manager working at [Kry](https://www.kry.se/en/). Currently helping clinicians to conduct video, voice & chat consultations and messaging to patients. 
+I’m a Senior Product Manager [building a wellbeing app](https://hbme.co.uk/pages/download-app?srsltid=AfmBOoohDaNjOYR-E_WunkJxziwQTdMn99E4Hq3KMcLtR2PhzNUEx69S). Previous to that I was at [Kry](https://www.kry.se/en/), helping clinicians to conduct video, voice & chat consultations and messaging to patients. 
 
 I have worked at [Nando's](https://www.nandos.co.uk/), [NHSX](https://www.nhsx.nhs.uk/), [the Department of Health and Social Care](https://www.gov.uk/government/organisations/department-of-health-and-social-care), the Ministry of Defence, Department of Health (before it became DHSC), Department for Work and Pensions and at UK Parliament.
 
 ## Selection of things I’ve worked on;
+- overseeing a blood testing app and then helping to build [a wellbeing app from scratch](https://colinpattinson.github.io/hbme-wins/)
+- making a [European GP service app more efficient](https://colinpattinson.github.io/Kry-Wins/)
 - a [new website for Nandos](https://beta.nandos.co.uk/food/menu/index.html)
 - creating a new service from scratch in the matter of weeks to help bring back skilled volunteers to the NHS during the COVID-19 pandemic
 - a [discovery into children and young people's mental health services](https://nhsx.github.io/Mental-Health/)
