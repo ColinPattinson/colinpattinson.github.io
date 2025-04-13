@@ -37,7 +37,7 @@ comments: false
         async function fetchDepartures() {
             const stationCode = "SSS"; // South Shields station code
             const platformNumber = 2; // Adjust platform number as needed
-            const apiUrl = `https://cors-anywhere.herokuapp.com/https://metro-rti.nexus.org.uk/api/times/${stationCode}/${platformNumber}`;
+            const apiUrl = `https://metro-rti.nexus.org.uk/api/times/${stationCode}/${platformNumber}`;
             
             try {
                 const response = await fetch(apiUrl, {
