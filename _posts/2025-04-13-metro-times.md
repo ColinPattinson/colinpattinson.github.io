@@ -6,7 +6,7 @@ excerpt: "Playing around to try get simple train times"
 tag: [Life]
 comments: false
 ---
-I wanted to try pull live deaprture times for a specific station in a very quick experiment. See results below:
+I wanted to try pull live deaprture times for a specific station in a very quick experiment (update... [I've made a mini website!](https://colinpattinson.github.io/south-shields-metro-times/)). See results below:
 
 
 <html lang="en">
