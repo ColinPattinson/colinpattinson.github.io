@@ -6,6 +6,8 @@ excerpt: "Playing around to try get simple train times"
 tag: [Life]
 comments: false
 ---
+I wanted to try pull live deaprture times for a specific station in a very quick experiment. See results below:
+
 
 <html lang="en">
 <head>
