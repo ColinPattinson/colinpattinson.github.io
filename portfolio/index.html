@@ -88,52 +88,46 @@
 </section>
 
 
-    <!-- Experience Logos Reel (smaller + faster + no overlap) -->
-  <section class="py-10 bg-white/80 backdrop-blur-md rounded-3xl mx-0 my-12 lg:-mt-6 border border-gray-200 shadow-2xl">
-  <p class="px-10 mb-2 text-xs uppercase tracking-widest text-gray-500">Formerly of</p>
+   <!-- Experience Logos Reel -->
+<section class="py-10 bg-white/80 backdrop-blur-md rounded-3xl mx-0 my-12 lg:-mt-6 border border-gray-200 shadow-2xl">
+  <p class="px-10 pb-2 text-xs uppercase tracking-widest text-gray-500">Formerly of</p>
 
   <div class="overflow-hidden [mask-image:linear-gradient(to_right,transparent_0,white_10%,white_90%,transparent_100%)]">
     <div class="flex marquee whitespace-nowrap py-6">
-      ...
+
+      <!-- Group A (must be full width for the -50% animation to loop cleanly) -->
+      <div class="flex items-center justify-center gap-10 min-w-full flex-shrink-0 px-10
+                  [&>img]:h-8 [&>img]:w-auto [&>img]:flex-shrink-0
+                  [&>img]:object-contain
+                  [&>img]:grayscale [&>img]:hover:grayscale-0
+                  [&>img]:opacity-60 [&>img]:hover:opacity-100
+                  [&>img]:transition-all [&>img]:duration-300">
+        <img src="/portfolio/images/logos/uk-parliament.png" alt="UK Parliament" loading="lazy" width="170" height="32" />
+        <img src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy" width="120" height="32" />
+        <img src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy" width="140" height="32" />
+        <img src="/portfolio/images/logos/nandos.png" alt="Nando's" loading="lazy" width="140" height="32" />
+        <img src="/portfolio/images/logos/civil-service.png" alt="Civil Service" loading="lazy" width="170" height="32" />
+        <img src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="32" />
+      </div>
+
+      <!-- Group B (duplicate) -->
+      <div class="flex items-center justify-center gap-10 min-w-full flex-shrink-0 px-10
+                  [&>img]:h-8 [&>img]:w-auto [&>img]:flex-shrink-0
+                  [&>img]:object-contain
+                  [&>img]:grayscale [&>img]:hover:grayscale-0
+                  [&>img]:opacity-60 [&>img]:hover:opacity-100
+                  [&>img]:transition-all [&>img]:duration-300" aria-hidden="true">
+        <img src="/portfolio/images/logos/uk-parliament.png" alt="" loading="lazy" width="170" height="32" />
+        <img src="/portfolio/images/logos/nhs.png" alt="" loading="lazy" width="120" height="32" />
+        <img src="/portfolio/images/logos/kry.png" alt="" loading="lazy" width="140" height="32" />
+        <img src="/portfolio/images/logos/nandos.png" alt="" loading="lazy" width="140" height="32" />
+        <img src="/portfolio/images/logos/civil-service.png" alt="" loading="lazy" width="170" height="32" />
+        <img src="/portfolio/images/logos/holland-and-barrett.png" alt="" loading="lazy" width="220" height="32" />
+      </div>
+
     </div>
   </div>
 </section>
-
-          <!-- Group A -->
-<div class="flex items-center gap-8 w-max flex-shrink-0 px-10
-            [&>img]:h-8 [&>img]:w-auto [&>img]:flex-shrink-0
-            [&>img]:object-contain
-            [&>img]:grayscale [&>img]:hover:grayscale-0
-            [&>img]:opacity-60 [&>img]:hover:opacity-100
-            [&>img]:transition-all [&>img]:duration-300">
-  <img src="/portfolio/images/logos/UK-Parliament.png" alt="UK Parliament logo" loading="lazy" width="220" height="32" />
-  <img src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy" width="120" height="32" />
-  <img src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy" width="140" height="32" />
-  <img src="/portfolio/images/logos/nandos.png" alt="Nando's" loading="lazy" width="140" height="32" />
-  <img src="/portfolio/images/logos/civil-service.png" alt="Civil Service" loading="lazy" width="180" height="32" />
-    <img src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="32" />
-</div>
-
-<!-- Group B (duplicate for seamless loop) -->
-<div class="flex items-center gap-8 w-max flex-shrink-0 px-10
-            [&>img]:h-8 [&>img]:w-auto [&>img]:flex-shrink-0
-            [&>img]:object-contain
-            [&>img]:grayscale [&>img]:hover:grayscale-0
-            [&>img]:opacity-60 [&>img]:hover:opacity-100
-            [&>img]:transition-all [&>img]:duration-300"
-     aria-hidden="true">
-  <img src="/portfolio/images/logos/UK-Parliament.png" alt="UK Parliament logo" loading="lazy" width="220" height="32" />
-  <img src="/portfolio/images/logos/nhs.png" alt="" loading="lazy" width="120" height="32" />
-  <img src="/portfolio/images/logos/kry.png" alt="" loading="lazy" width="140" height="32" />
-  <img src="/portfolio/images/logos/nandos.png" alt="" loading="lazy" width="140" height="32" />
-  <img src="/portfolio/images/logos/civil-service.png" alt="" loading="lazy" width="180" height="32" />
-    <img src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="32" />
-</div>
-
-
-        </div>
-      </div>
-    </section>
 
     <!-- Projects -->
     <section class="mb-24">
