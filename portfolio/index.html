@@ -40,23 +40,53 @@
 
   <main class="max-w-6xl mx-auto px-6 py-16 lg:py-24">
 
-    <!-- Hero -->
-    <section class="text-center mb-14 lg:mb-20">
-      <h1 class="text-5xl lg:text-7xl font-black bg-gradient-to-r from-slate-900 via-blue-900 to-slate-600 bg-clip-text text-transparent mb-6 leading-tight">
-        Product<br><span class="text-4xl lg:text-5xl">Portfolio</span>
+   <!-- Hero -->
+<section class="mb-14 lg:mb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+    <!-- Copy -->
+    <div class="lg:col-span-7 text-center lg:text-left">
+      <p class="text-sm tracking-widest uppercase text-gray-500 mb-4">Senior Product Manager</p>
+
+      <h1 class="text-5xl lg:text-7xl font-black text-slate-900 leading-tight">
+        Hi, I’m <span class="text-blue-700">Colin</span>.<br />
+        I make products users <span class="italic text-slate-600">adore</span>.
       </h1>
-      <p class="text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
-        Senior Product Manager • Healthtech/Fintech • AI & Data Journeys • Cleantech/Energy Ready
+
+      <p class="text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto lg:mx-0 leading-relaxed mt-6">
+        I love turning fuzzy problems into simple, measurable customer journeys—and I can help your team do the same.
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="mailto:your@email.com" class="bg-blue-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center">
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-10">
+        <a href="mailto:your@email.com"
+           class="bg-blue-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center">
           <i class="fas fa-envelope mr-2"></i> Get in Touch
         </a>
-        <a href="https://linkedin.com/in/colinpattinson" class="border-2 border-gray-300 text-gray-800 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition flex items-center justify-center">
+
+        <a href="https://linkedin.com/in/colinpattinson"
+           class="border-2 border-gray-300 text-gray-800 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition flex items-center justify-center">
           <i class="fab fa-linkedin mr-2"></i> LinkedIn
         </a>
       </div>
-    </section>
+    </div>
+
+    <!-- Photo -->
+    <div class="lg:col-span-5 flex justify-center lg:justify-end">
+      <div class="relative">
+        <div class="absolute -inset-3 bg-gradient-to-br from-blue-200 to-indigo-200 rounded-[2.5rem] blur-xl opacity-60"></div>
+
+        <img
+          src="/assets/img/logo.jpg"
+          alt="Colin Pattinson headshot"
+          class="relative w-40 h-40 lg:w-56 lg:h-56 object-cover rounded-[2.25rem] ring-4 ring-white shadow-2xl"
+          loading="lazy"
+          width="224"
+          height="224"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Experience Logos Reel (smaller + faster + no overlap) -->
     <section class="py-10 bg-white/80 backdrop-blur-md rounded-3xl mx-0 my-12 lg:-mt-6 border border-gray-200 shadow-2xl">
