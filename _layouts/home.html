@@ -10,8 +10,52 @@ layout: compress
     {% include head.html %}
     <meta name="google-site-verification" content="X5gLfes4pg8Tj6nKa6Z1qZLSY9SEvi3bQAQEPU8TT3Q" />
 
-    <!-- Icons for the CTA button -->
+    <!-- Icon for the portfolio CTA -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+      /* Lightweight, integrated CTA + tidy action row */
+      .cta-wrap { margin: 14px auto 0 auto; max-width: 520px; }
+      .cta-link {
+        display:flex; align-items:center; justify-content:center; gap:10px;
+        padding:14px 16px; border-radius:14px;
+        border:1px solid rgba(209,213,219,1);
+        background: rgba(255,255,255,0.55);
+        color:#0f172a; text-decoration:none; font-weight:700;
+        transition: transform .12s ease, background-color .12s ease, border-color .12s ease;
+      }
+      .cta-link:hover {
+        transform: translateY(-1px);
+        background: rgba(255,255,255,0.8);
+        border-color: rgba(147,197,253,1);
+      }
+      .cta-copy {
+        margin:10px 0 0 0;
+        font-size:0.95rem; font-weight:300; color:#4b5563; line-height:1.5;
+      }
+      .actions {
+        margin-top: 18px;
+        display:flex; gap:12px; justify-content:center; flex-wrap:wrap;
+      }
+      .action-btn {
+        min-width: 120px;
+        display:inline-flex; align-items:center; justify-content:center; gap:8px;
+        padding:10px 14px;
+        border-radius:12px;
+        border:1px solid rgba(229,231,235,1);
+        background: rgba(255,255,255,0.65);
+        color:#111827 !important;
+        text-decoration:none;
+        font-weight:600;
+        transition: transform .12s ease, background-color .12s ease, border-color .12s ease;
+      }
+      .action-btn:hover {
+        transform: translateY(-1px);
+        background: rgba(255,255,255,0.9);
+        border-color: rgba(209,213,219,1);
+      }
+      .action-btn i { color:#2563eb; }
+    </style>
 </head>
 <body>
     {% include nav.html %}
@@ -37,51 +81,39 @@ layout: compress
                         </a>
                     </h3>
 
-                    <!-- Portfolio CTA (integrated, above Get in touch / social links) -->
-                    <div style="margin: 14px auto 6px auto; max-width: 520px;">
-                      <a href="{{ site.url }}/portfolio/"
-                         aria-label="View my product portfolio"
-                         style="
-                           display:flex;
-                           align-items:center;
-                           justify-content:center;
-                           gap:10px;
-                           padding:14px 16px;
-                           border-radius:14px;
-                           border:1px solid rgba(209,213,219,1);
-                           background: rgba(255,255,255,0.55);
-                           color:#0f172a;
-                           text-decoration:none;
-                           font-weight:700;
-                           transition: transform .12s ease, background-color .12s ease, border-color .12s ease;
-                         "
-                         onmouseover="this.style.transform='translateY(-1px)'; this.style.background='rgba(255,255,255,0.8)'; this.style.borderColor='rgba(147,197,253,1)';"
-                         onmouseout="this.style.transform='translateY(0)'; this.style.background='rgba(255,255,255,0.55)'; this.style.borderColor='rgba(209,213,219,1)';"
-                      >
+                    <!-- Portfolio CTA -->
+                    <div class="cta-wrap">
+                      <a class="cta-link" href="{{ site.url }}/portfolio/" aria-label="View my product portfolio">
                         <i class="fa-solid fa-folder-open" aria-hidden="true" style="color:#2563eb;"></i>
                         <span>Explore my Product Portfolio</span>
                         <span aria-hidden="true" style="color:#2563eb;">→</span>
                       </a>
-
-                      <p style="margin:10px 0 0 0; font-size:0.95rem; font-weight:300; color:#4b5563; line-height:1.5;">
+                      <p class="cta-copy">
                         Case studies, outcomes, and how I turn fuzzy problems into innovative digital services.
                       </p>
                     </div>
 
-                    <!-- Get in touch... is inside social-links include; CTA now sits above it -->
-                    {% include social-links.html %}
+                    <!-- One neat row of actions -->
+                    <div class="actions" role="navigation" aria-label="Primary actions">
+                      <!-- Change email address -->
+                      <a class="action-btn" href="mailto:your@email.com" aria-label="Email Colin">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        Contact
+                      </a>
 
-                    <hr class="hr-line">
+                      <a class="action-btn" href="{{ site.url }}/about" aria-label="About me link">
+                        <i class="fa-solid fa-user" aria-hidden="true"></i>
+                        About
+                      </a>
 
-                    <!-- Existing buttons -->
-                    <h3 class="title">
-                         <a class="btn zoombtn" href="{{ site.url }}/about" aria-label="About me link">
-                           About
-                         </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/posts" aria-label="Link to posts">
-                           Posts
-                         </a>
-                    </h3>
+                      <a class="action-btn" href="{{ site.url }}/posts" aria-label="Link to posts">
+                        <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+                        Posts
+                      </a>
+                    </div>
+
+                    <!-- Removed: social-links include to avoid the extra “Get in touch…” block -->
+                    <!-- {% include social-links.html %} -->
             </div>
         </div>
     </header>
