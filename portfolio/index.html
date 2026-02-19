@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Portfolio - Colin Pattinson | Senior PM</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" />
 
   <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif; }
 
-    /* Marquee: move by half the track (because we duplicate the logo set) */
-    @keyframes marquee-slow {
+    /* Faster + smoother marquee (duration controls speed) */
+    @keyframes marquee {
       0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
-    .animate-marquee-slow {
-      animation: marquee-slow 80s linear infinite;
+    .marquee {
+      animation: marquee 40s linear infinite; /* 2× faster than 80s */
       will-change: transform;
     }
-    .animate-marquee-slow:hover { animation-play-state: paused; }
-    @media (prefers-reduced-motion: reduce) {
-      .animate-marquee-slow { animation-play-state: paused; }
-    }
+    .marquee:hover { animation-play-state: paused; }
+    @media (prefers-reduced-motion: reduce) { .marquee { animation-play-state: paused; } }
   </style>
 </head>
 
@@ -43,12 +41,12 @@
   <main class="max-w-6xl mx-auto px-6 py-16 lg:py-24">
 
     <!-- Hero -->
-    <section class="text-center mb-20 lg:mb-32">
+    <section class="text-center mb-14 lg:mb-20">
       <h1 class="text-5xl lg:text-7xl font-black bg-gradient-to-r from-slate-900 via-blue-900 to-slate-600 bg-clip-text text-transparent mb-6 leading-tight">
         Product<br><span class="text-4xl lg:text-5xl">Portfolio</span>
       </h1>
       <p class="text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed mb-8">
-        9+ years Senior PM • Healthtech/Fintech • AI & Data Journeys • Cleantech/Energy Ready
+        Senior Product Manager • Healthtech/Fintech • AI & Data Journeys • Cleantech/Energy Ready
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="mailto:your@email.com" class="bg-blue-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center">
@@ -60,38 +58,37 @@
       </div>
     </section>
 
-    <!-- Experience Logos Reel -->
-    <section class="py-20 bg-white/80 backdrop-blur-md rounded-3xl mx-4 lg:mx-0 my-16 lg:-mt-24 border border-gray-200 shadow-2xl">
+    <!-- Experience Logos Reel (smaller + faster + no overlap) -->
+    <section class="py-10 bg-white/80 backdrop-blur-md rounded-3xl mx-0 my-12 lg:-mt-6 border border-gray-200 shadow-2xl">
       <div class="overflow-hidden [mask-image:linear-gradient(to_right,transparent_0,white_10%,white_90%,transparent_100%)]">
+        <div class="flex marquee whitespace-nowrap py-6">
 
-        <!-- Track -->
-        <div class="flex animate-marquee-slow whitespace-nowrap py-12 px-8">
-
-          <!-- Set A -->
-          <div class="flex items-center gap-20 min-w-full
-                      [&>img]:h-16 [&>img]:w-auto
+          <!-- Group A -->
+          <div class="flex items-center gap-12 min-w-full flex-shrink-0 px-10
+                      [&>img]:h-8 [&>img]:w-auto [&>img]:flex-shrink-0
+                      [&>img]:object-contain
                       [&>img]:grayscale [&>img]:hover:grayscale-0
                       [&>img]:opacity-60 [&>img]:hover:opacity-100
                       [&>img]:transition-all [&>img]:duration-300">
-            <img src="/portfolio/images/logos/kry.png" alt="Kry (Livi)" loading="lazy" width="140" height="56">
-            <img src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="56">
-            <img src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy" width="120" height="56">
-            <img src="/portfolio/images/logos/nandos.png" alt="Nandos" loading="lazy" width="160" height="56">
-            <img src="/portfolio/images/logos/civil-service.png" alt="UK civil service" loading="lazy" width="180" height="56">
-            <img src="/portfolio/images/logos/UK-Parliament.png" alt="UK Parliament" loading="lazy" width="180" height="56">
+            <img src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="32" />
+            <img src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy" width="120" height="32" />
+            <img src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy" width="140" height="32" />
+            <img src="/portfolio/images/logos/nandos.png" alt="Nando's" loading="lazy" width="140" height="32" />
+            <img src="/portfolio/images/logos/civil-service.png" alt="Civil Service" loading="lazy" width="180" height="32" />
           </div>
 
-          <!-- Set B (duplicate of A for seamless loop) -->
-          <div class="flex items-center gap-20 min-w-full
-                      [&>img]:h-16 [&>img]:w-auto
+          <!-- Group B (duplicate for seamless loop) -->
+          <div class="flex items-center gap-12 min-w-full flex-shrink-0 px-10
+                      [&>img]:h-8 [&>img]:w-auto [&>img]:flex-shrink-0
+                      [&>img]:object-contain
                       [&>img]:grayscale [&>img]:hover:grayscale-0
                       [&>img]:opacity-60 [&>img]:hover:opacity-100
-                      [&>img]:transition-all [&>img]:duration-300">
-            <img src="/portfolio/images/logos/kry.png" alt="Kry (Livi)" loading="lazy" width="140" height="56">
-            <img src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="56">
-            <img src="/portfolio/images/logos/nhsx.png" alt="NHSX" loading="lazy" width="120" height="56">
-            <img src="/portfolio/images/logos/vitality.png" alt="Vitality" loading="lazy" width="160" height="56">
-            <img src="/portfolio/images/logos/oaknorth.png" alt="OakNorth" loading="lazy" width="180" height="56">
+                      [&>img]:transition-all [&>img]:duration-300" aria-hidden="true">
+            <img src="/portfolio/images/logos/holland-and-barrett.png" alt="" loading="lazy" width="220" height="32" />
+            <img src="/portfolio/images/logos/nhs.png" alt="" loading="lazy" width="120" height="32" />
+            <img src="/portfolio/images/logos/kry.png" alt="" loading="lazy" width="140" height="32" />
+            <img src="/portfolio/images/logos/nandos.png" alt="" loading="lazy" width="140" height="32" />
+            <img src="/portfolio/images/logos/civil-service.png" alt="" loading="lazy" width="180" height="32" />
           </div>
 
         </div>
@@ -103,7 +100,6 @@
       <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">Featured Work</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- Project 1 -->
         <div class="group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="flex items-start gap-4 mb-6">
             <div class="p-3 bg-blue-100 rounded-2xl group-hover:rotate-6 transition">
@@ -121,7 +117,6 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
         <div class="group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="flex items-start gap-4 mb-6">
             <div class="p-3 bg-emerald-100 rounded-2xl group-hover:rotate-6 transition">
@@ -139,7 +134,6 @@
           </div>
         </div>
 
-        <!-- Project 3 -->
         <div class="group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="flex items-start gap-4 mb-6">
             <div class="p-3 bg-purple-100 rounded-2xl group-hover:rotate-6 transition">
@@ -160,7 +154,6 @@
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="text-center text-gray-500 pt-20 pb-12 border-t border-gray-200">
       <p>&copy; 2026 Colin Pattinson. Built with GitHub Pages.</p>
     </footer>
