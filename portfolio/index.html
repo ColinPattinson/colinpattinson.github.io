@@ -4,32 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Portfolio - Colin Pattinson | Senior PM</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-@keyframes marquee-slow {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-.animate-marquee-slow {
-  animation: marquee-slow 80s linear infinite; /* 80s = very slow like Liam */
-}
-.animate-marquee-slow:hover {
-  animation-play-state: paused; /* Pause on hover */
-}
-@media (prefers-reduced-motion: reduce) {
-  .animate-marquee-slow { animation-play-state: paused; }
-}
-</style>
 
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
 
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
+
+    /* Marquee: move by half the track (because we duplicate the logo set) */
+    @keyframes marquee-slow {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee-slow {
+      animation: marquee-slow 80s linear infinite;
+      will-change: transform;
+    }
+    .animate-marquee-slow:hover { animation-play-state: paused; }
+    @media (prefers-reduced-motion: reduce) {
+      .animate-marquee-slow { animation-play-state: paused; }
+    }
   </style>
 </head>
+
 <body class="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
-  
+
   <!-- Nav -->
   <nav class="bg-white/80 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-200">
     <div class="max-w-6xl mx-auto px-6 py-4">
@@ -41,7 +41,7 @@
   </nav>
 
   <main class="max-w-6xl mx-auto px-6 py-16 lg:py-24">
-    
+
     <!-- Hero -->
     <section class="text-center mb-20 lg:mb-32">
       <h1 class="text-5xl lg:text-7xl font-black bg-gradient-to-r from-slate-900 via-blue-900 to-slate-600 bg-clip-text text-transparent mb-6 leading-tight">
@@ -60,40 +60,48 @@
       </div>
     </section>
 
-      <!-- Experience Logos Reel -->
-<section class="py-20 bg-white/80 backdrop-blur-md rounded-3xl mx-4 lg:mx-0 my-16 lg:-mt-24 border border-gray-200 shadow-2xl">
-  <div class="overflow-hidden [mask-image:linear-gradient(to_right,transparent_0,white_10%,white_90%,transparent_100%)]">
-    
-    <!-- Top row: Slow left scroll -->
-    <div class="flex animate-marquee-slow whitespace-nowrap py-12 px-8">
-      <!-- Logos duplicated for seamless loop -->
-      <div class="flex items-center gap-20 [&>img]:h-16 [&>img]:w-auto [&>img]:grayscale [&>img]:hover:grayscale-0 [&>img]:opacity-60 [&>img]:hover:opacity-100 [&>img]:transition-all [&>img]:duration-300 min-w-full">
-        <img src="images/logos/kry.png" alt="Kry (Livi)" loading="lazy" width="140" height="56">
-        <img src="images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="56">
-        <img src="images/logos/nhsx.png" alt="NHSX" loading="lazy" width="120" height="56">
-        <img src="images/logos/vitality.png" alt="Vitality" loading="lazy" width="160" height="56">
-        <img src="images/logos/oaknorth.png" alt="OakNorth" loading="lazy" width="180" height="56">
-        <!-- Add more if you have -->
-      </div>
-      <!-- Exact duplicate -->
-      <div class="flex items-center gap-20 [&>img]:h-16 [&>img]:w-auto [&>img]:grayscale [&>img]:hover:grayscale-0 [&>img]:opacity-60 [&>img]:hover:opacity-100 [&>img]:transition-all [&>img]:duration-300">
-        <img src="images/logos/kry.png" alt="Kry (Livi)" loading="lazy" width="140" height="56">
-        <img src="images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="56">
-        <img src="images/logos/nhsx.png" alt="NHSX" loading="lazy" width="120" height="56">
-        <img src="images/logos/vitality.png" alt="Vitality" loading="lazy" width="160" height="56">
-        <img src="images/logos/oaknorth.png" alt="OakNorth" loading="lazy" width="180" height="56">
-      </div>
-    </div>
-    
-  </div>
-</section>
+    <!-- Experience Logos Reel -->
+    <section class="py-20 bg-white/80 backdrop-blur-md rounded-3xl mx-4 lg:mx-0 my-16 lg:-mt-24 border border-gray-200 shadow-2xl">
+      <div class="overflow-hidden [mask-image:linear-gradient(to_right,transparent_0,white_10%,white_90%,transparent_100%)]">
 
+        <!-- Track -->
+        <div class="flex animate-marquee-slow whitespace-nowrap py-12 px-8">
+
+          <!-- Set A -->
+          <div class="flex items-center gap-20 min-w-full
+                      [&>img]:h-16 [&>img]:w-auto
+                      [&>img]:grayscale [&>img]:hover:grayscale-0
+                      [&>img]:opacity-60 [&>img]:hover:opacity-100
+                      [&>img]:transition-all [&>img]:duration-300">
+            <img src="/portfolio/images/logos/kry.png" alt="Kry (Livi)" loading="lazy" width="140" height="56">
+            <img src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="56">
+            <img src="/portfolio/images/logos/nhsx.png" alt="NHSX" loading="lazy" width="120" height="56">
+            <img src="/portfolio/images/logos/vitality.png" alt="Vitality" loading="lazy" width="160" height="56">
+            <img src="/portfolio/images/logos/oaknorth.png" alt="OakNorth" loading="lazy" width="180" height="56">
+          </div>
+
+          <!-- Set B (duplicate of A for seamless loop) -->
+          <div class="flex items-center gap-20 min-w-full
+                      [&>img]:h-16 [&>img]:w-auto
+                      [&>img]:grayscale [&>img]:hover:grayscale-0
+                      [&>img]:opacity-60 [&>img]:hover:opacity-100
+                      [&>img]:transition-all [&>img]:duration-300">
+            <img src="/portfolio/images/logos/kry.png" alt="Kry (Livi)" loading="lazy" width="140" height="56">
+            <img src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy" width="220" height="56">
+            <img src="/portfolio/images/logos/nhsx.png" alt="NHSX" loading="lazy" width="120" height="56">
+            <img src="/portfolio/images/logos/vitality.png" alt="Vitality" loading="lazy" width="160" height="56">
+            <img src="/portfolio/images/logos/oaknorth.png" alt="OakNorth" loading="lazy" width="180" height="56">
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- Projects -->
     <section class="mb-24">
       <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">Featured Work</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
+
         <!-- Project 1 -->
         <div class="group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="flex items-start gap-4 mb-6">
@@ -105,7 +113,7 @@
               <p class="text-blue-600 font-semibold text-xl">+25% Activation</p>
             </div>
           </div>
-          <p class="text-gray-700 text-lg leading-relaxed mb-6">Led 0→1 wellness integration. Scoped MVP under constraints, aligned eng/clinicians, hit retention targets [cite:3].</p>
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">Led 0→1 wellness integration. Scoped MVP under constraints, aligned eng/clinicians, hit retention targets.</p>
           <div class="flex flex-wrap gap-2">
             <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">#Healthtech</span>
             <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">#Retention</span>
@@ -123,7 +131,7 @@
               <p class="text-emerald-600 font-semibold text-xl">68% Faster Triage</p>
             </div>
           </div>
-          <p class="text-gray-700 text-lg leading-relaxed mb-6">Built evals/hallucination mitigations. Turned qual data into experiments + backlog priorities [cite:11].</p>
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">Built evals/hallucination mitigations. Turned qual data into experiments + backlog priorities.</p>
           <div class="flex flex-wrap gap-2">
             <span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">#AI</span>
             <span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">#Metrics</span>
@@ -141,7 +149,7 @@
               <p class="text-purple-600 font-semibold text-xl">-20% Cycle Time</p>
             </div>
           </div>
-          <p class="text-gray-700 text-lg leading-relaxed mb-6">End-to-end portals + metrics for clean-tech delivery excellence [web:15].</p>
+          <p class="text-gray-700 text-lg leading-relaxed mb-6">End-to-end portals + metrics for clean-tech delivery excellence.</p>
           <div class="flex flex-wrap gap-2">
             <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">#Cleantech</span>
             <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">#Operations</span>
@@ -153,10 +161,9 @@
 
     <!-- Footer -->
     <footer class="text-center text-gray-500 pt-20 pb-12 border-t border-gray-200">
-      <p>&copy; 2026 Colin Pattinson. Built with ❤️ on GitHub Pages.</p>
+      <p>&copy; 2026 Colin Pattinson. Built with GitHub Pages.</p>
     </footer>
 
   </main>
-
 </body>
 </html>
