@@ -18,12 +18,153 @@
       100% { transform: translateX(-50%); }
     }
     .marquee-track {
-      animation: marquee 40s linear infinite; /* 2× faster */
+      animation: marquee 40s linear infinite;
       will-change: transform;
     }
     .marquee-track:hover { animation-play-state: paused; }
     @media (prefers-reduced-motion: reduce) {
       .marquee-track { animation-play-state: paused; }
+    }
+
+    /* Featured Work (scoped to reduce collisions) */
+    #featured-work{
+      padding: 64px 0;
+      background: linear-gradient(180deg, rgba(11,18,32,.03), rgba(11,18,32,0));
+    }
+    #featured-work .featured__container{
+      width: min(1100px, 92vw);
+      margin: 0 auto;
+    }
+    #featured-work .featured__header{
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    #featured-work .featured__title{
+      font-size: clamp(28px, 3vw, 40px);
+      line-height: 1.15;
+      margin: 0;
+      color: #0b1220;
+      letter-spacing: -0.02em;
+    }
+    #featured-work .featured__subtitle{
+      margin: 10px auto 0;
+      max-width: 62ch;
+      color: rgba(11,18,32,.70);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    #featured-work .featured__grid{
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 26px;
+    }
+    @media (max-width: 980px){
+      #featured-work .featured__grid{ grid-template-columns: 1fr; }
+    }
+
+    #featured-work .work-card{
+      background: #fff;
+      border: 1px solid rgba(11,18,32,.10);
+      box-shadow: 0 14px 40px rgba(11,18,32,.10);
+      border-radius: 22px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    #featured-work .work-card__top{
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    #featured-work .work__icon{
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: rgba(11,18,32,.05);
+      flex: 0 0 auto;
+    }
+    #featured-work .work__icon--ops{ background: rgba(37,99,235,.14); color: #2563eb; }
+    #featured-work .work__icon--quality{ background: rgba(22,163,74,.14); color: #16a34a; }
+    #featured-work .work__icon--growth{ background: rgba(124,58,237,.14); color: #7c3aed; }
+
+    #featured-work .work-card__title{
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.25;
+      color: #0b1220;
+      letter-spacing: -0.01em;
+    }
+    #featured-work .work-card__metric{
+      margin: 6px 0 0;
+      font-size: 14px;
+      font-weight: 800;
+      color: rgba(11,18,32,.84);
+    }
+    #featured-work .work-card__image{
+      width: 100%;
+      height: 164px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 1px solid rgba(11,18,32,.10);
+      background: rgba(11,18,32,.03);
+    }
+    #featured-work .work-card__desc{
+      margin: 0;
+      color: rgba(11,18,32,.70);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    #featured-work .work-card__bullets{
+      margin: 0;
+      padding-left: 18px;
+      color: rgba(11,18,32,.74);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    #featured-work .work-card__tags{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 2px;
+    }
+    #featured-work .tag{
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(11,18,32,.10);
+      background: rgba(11,18,32,.03);
+      color: rgba(11,18,32,.72);
+      font-size: 12px;
+      font-weight: 650;
+      letter-spacing: .01em;
+    }
+    #featured-work .work-card__links{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 6px;
+    }
+    #featured-work .work-link{
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      color: rgba(11,18,32,.88);
+      border-bottom: 1px solid rgba(11,18,32,.28);
+      padding-bottom: 2px;
+    }
+    #featured-work .work-link:hover{
+      border-bottom-color: rgba(11,18,32,.60);
+    }
+    #featured-work .work-card__footnote{
+      margin: 4px 0 0;
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: rgba(11,18,32,.58);
     }
   </style>
 </head>
@@ -93,11 +234,8 @@
       <p class="px-10 pb-2 text-xs uppercase tracking-widest text-gray-500">Formerly of</p>
 
       <div class="overflow-hidden [mask-image:linear-gradient(to_right,transparent_0,white_10%,white_90%,transparent_100%)]">
-        <!-- Track (two identical halves) -->
         <div class="flex marquee-track whitespace-nowrap">
-          <!-- Half A -->
           <div class="flex items-center gap-12 px-10 py-8 flex-shrink-0">
-            <!-- LOGOS (repeat 4× to avoid blank space on wide screens) -->
             <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="UK Parliament" loading="lazy">
             <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy">
             <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy">
@@ -105,116 +243,184 @@
             <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="Civil Service" loading="lazy">
             <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy">
 
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="UK Parliament" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nandos.png" alt="Nando's" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="Civil Service" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy">
-
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="UK Parliament" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nandos.png" alt="Nando's" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="Civil Service" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy">
-
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="UK Parliament" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nandos.png" alt="Nando's" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="Civil Service" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy">
+            <!-- repeats omitted for brevity; keep yours as-is -->
           </div>
 
-          <!-- Half B (duplicate of Half A, aria-hidden) -->
           <div class="flex items-center gap-12 px-10 py-8 flex-shrink-0" aria-hidden="true">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/nandos.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="" loading="lazy">
-
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/nandos.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="" loading="lazy">
-
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/nandos.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="" loading="lazy">
-
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/nandos.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="" loading="lazy">
+            <!-- duplicates omitted for brevity; keep yours as-is -->
           </div>
         </div>
       </div>
     </section>
 
     <!-- Featured Work -->
-    <section class="mb-24">
-      <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-12 text-center">Featured Work</h2>
+    <section id="featured-work">
+      <div class="featured__container">
+        <header class="featured__header">
+          <h2 class="featured__title">Featured Work</h2>
+          <p class="featured__subtitle">
+            PM-led outcomes with clear metrics — improving service efficiency, clinician productivity, and patient experience.
+          </p>
+        </header>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="flex items-start gap-4 mb-6">
-            <div class="p-3 bg-blue-100 rounded-2xl group-hover:rotate-6 transition">
-              <i class="fas fa-chart-line text-2xl text-blue-600"></i>
-            </div>
-            <div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">Kry Partnership</h3>
-              <p class="text-blue-600 font-semibold text-xl">+25% Activation</p>
-            </div>
-          </div>
-          <p class="text-gray-700 text-lg leading-relaxed mb-6">Led 0→1 wellness integration. Scoped MVP under constraints, aligned stakeholders, proved impact.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">#Healthtech</span>
-            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">#Retention</span>
-          </div>
-        </div>
+        <div class="featured__grid">
 
-        <div class="group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="flex items-start gap-4 mb-6">
-            <div class="p-3 bg-emerald-100 rounded-2xl group-hover:rotate-6 transition">
-              <i class="fas fa-robot text-2xl text-emerald-600"></i>
-            </div>
-            <div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">AI Insights Engine</h3>
-              <p class="text-emerald-600 font-semibold text-xl">68% Faster Triage</p>
-            </div>
-          </div>
-          <p class="text-gray-700 text-lg leading-relaxed mb-6">Built evals and quality checks; turned qualitative feedback into experiments and roadmap decisions.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">#AI</span>
-            <span class="px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">#Metrics</span>
-          </div>
-        </div>
+          <!-- 1) Nurse Chat -->
+          <article class="work-card">
+            <div class="work-card__top">
+              <div class="work__icon work__icon--ops" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                  <path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
 
-        <div class="group bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="flex items-start gap-4 mb-6">
-            <div class="p-3 bg-purple-100 rounded-2xl group-hover:rotate-6 transition">
-              <i class="fas fa-truck-ramp-box text-2xl text-purple-600"></i>
+              <div>
+                <h3 class="work-card__title">Nurse Chat → Service efficiency</h3>
+                <p class="work-card__metric">
+                  42% less nurse time • 29% fewer nurse messages • 41.5% fewer “no‑response” chats
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">Purchase & Fulfilment</h3>
-              <p class="text-purple-600 font-semibold text-xl">-20% Cycle Time</p>
+
+            <img
+              class="work-card__image"
+              src="/assets/featured/nurse-chat.png"
+              alt="Screenshot or illustration of nurse chat experience"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+
+            <p class="work-card__desc">
+              I led the product direction for chat workflow: clarifying the operational problem, aligning clinical + engineering teams,
+              defining success metrics, and iterating in production to reduce nurse workload while maintaining care quality.
+            </p>
+
+            <ul class="work-card__bullets">
+              <li>42% less nurse time in chat (10 minutes average vs 24 minutes in the comparison group).</li>
+              <li>29% fewer nurse messages per chat.</li>
+              <li>41.5% reduction in “no‑response” patients.</li>
+            </ul>
+
+            <div class="work-card__tags">
+              <span class="tag">#Chat</span>
+              <span class="tag">#ServiceEfficiency</span>
+              <span class="tag">#ClinicalOps</span>
+              <span class="tag">#Metrics</span>
             </div>
-          </div>
-          <p class="text-gray-700 text-lg leading-relaxed mb-6">Improved purchase-to-delivery journey using portals, metrics, and operational feedback loops.</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">#Cleantech</span>
-            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">#Operations</span>
-          </div>
+
+            <div class="work-card__links">
+              <a class="work-link" href="https://www.kry.tech/spotlight/ai-powered-nurse-chat" target="_blank" rel="noreferrer">
+                Kry spotlight (metrics) →
+              </a>
+            </div>
+
+            <p class="work-card__footnote">
+              My AI contribution here was clinician‑in‑the‑loop experimentation to help doctors/nurses draft case notes faster.
+              The broader AI automation described publicly expanded after I left.
+            </p>
+          </article>
+
+          <!-- 2) Consultation workflow -->
+          <article class="work-card">
+            <div class="work-card__top">
+              <div class="work__icon work__icon--quality" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                  <path d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4Z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+
+              <div>
+                <h3 class="work-card__title">Consultation workflow → Throughput</h3>
+                <p class="work-card__metric">7.28 appointments per hour</p>
+              </div>
+            </div>
+
+            <img
+              class="work-card__image"
+              src="/assets/featured/consultation-workflow.png"
+              alt="Screenshot or illustration of consultation workflow"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+
+            <p class="work-card__desc">
+              Shaped the clinician experience to reduce cognitive load and admin friction, improving onboarding and day‑to‑day flow so
+              clinicians can stay efficient while focusing on the patient.
+            </p>
+
+            <ul class="work-card__bullets">
+              <li>Built around focus modes and information hierarchy to make complex workflows learnable and fast.</li>
+              <li>Used operational feedback loops (clinician feedback + workflow signals) to prioritise the highest leverage fixes.</li>
+              <li>Supported a service model achieving 7.28 appointments per hour.</li>
+            </ul>
+
+            <div class="work-card__tags">
+              <span class="tag">#ClinicianUX</span>
+              <span class="tag">#Workflow</span>
+              <span class="tag">#Ops</span>
+              <span class="tag">#Quality</span>
+            </div>
+
+            <div class="work-card__links">
+              <a class="work-link" href="https://www.kry.tech/spotlight/consultation-experience" target="_blank" rel="noreferrer">
+                Kry spotlight →
+              </a>
+            </div>
+          </article>
+
+          <!-- 3) Partnership integration -->
+          <article class="work-card">
+            <div class="work-card__top">
+              <div class="work__icon work__icon--growth" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                  <path d="M4 16l6-6 4 4 6-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M20 6v6h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+
+              <div>
+                <h3 class="work-card__title">Partnership integration → Activation</h3>
+                <p class="work-card__metric">0→1 integration shipped; activation uplift (see case study)</p>
+              </div>
+            </div>
+
+            <img
+              class="work-card__image"
+              src="/assets/featured/partnership-integration.png"
+              alt="Screenshot or illustration of partnership integration work"
+              loading="lazy"
+              onerror="this.style.display='none'"
+            />
+
+            <p class="work-card__desc">
+              Led a constrained integration from discovery through launch — aligned partner stakeholders, scoped MVP,
+              and set up instrumentation to prove impact on activation and engagement.
+            </p>
+
+            <ul class="work-card__bullets">
+              <li>Framed scope around the activation funnel and the smallest testable path to value.</li>
+              <li>Delivered iteratively to manage risk and keep multiple teams aligned.</li>
+              <li>Documented trade‑offs and outcomes clearly for future teams (and hiring managers).</li>
+            </ul>
+
+            <div class="work-card__tags">
+              <span class="tag">#0to1</span>
+              <span class="tag">#Activation</span>
+              <span class="tag">#Partnerships</span>
+              <span class="tag">#Analytics</span>
+            </div>
+
+            <div class="work-card__links">
+              <a class="work-link" href="https://colinpattinson.github.io/Kry-Wins/" target="_blank" rel="noreferrer">
+                Read my case study →
+              </a>
+              <a class="work-link" href="https://colinpattinson.github.io/kry-anniversary/" target="_blank" rel="noreferrer">
+                Read my reflection →
+              </a>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
