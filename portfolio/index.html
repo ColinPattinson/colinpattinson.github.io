@@ -12,159 +12,206 @@
   <style>
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif; }
 
-    /* Marquee: move by half the track because we duplicate the whole track */
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+    /* ---------- Gapless marquee (no more manual duplication) ---------- */
+    .marquee {
+      --duration: 34s;
+      --gap: 3rem;
+      position: relative;
+      overflow: hidden;
     }
-    .marquee-track {
-      animation: marquee 40s linear infinite;
+    .marquee__track{
+      display: flex;
+      align-items: center;
+      gap: var(--gap);
+      width: max-content;
       will-change: transform;
+      animation: marqueeScroll var(--duration) linear infinite;
     }
-    .marquee-track:hover { animation-play-state: paused; }
+    .marquee:hover .marquee__track { animation-play-state: paused; }
     @media (prefers-reduced-motion: reduce) {
-      .marquee-track { animation-play-state: paused; }
+      .marquee__track { animation: none !important; transform: none !important; }
+    }
+    @keyframes marqueeScroll{
+      from { transform: translateX(0); }
+      to { transform: translateX(calc(-1 * var(--marquee-half, 0px))); }
     }
 
-    /* Featured Work (scoped to reduce collisions) */
-    #featured-work{
-      padding: 64px 0;
-      background: linear-gradient(180deg, rgba(11,18,32,.03), rgba(11,18,32,0));
+    /* ---------- Visual case-study list (scales to 10 items) ---------- */
+    .case-studies{
+      padding: 48px 0 12px;
     }
-    #featured-work .featured__container{
+    .case-studies__wrap{
       width: min(1100px, 92vw);
       margin: 0 auto;
     }
-    #featured-work .featured__header{
+    .case-studies__header{
       text-align: center;
-      margin-bottom: 28px;
+      margin-bottom: 26px;
     }
-    #featured-work .featured__title{
-      font-size: clamp(28px, 3vw, 40px);
-      line-height: 1.15;
+    .case-studies__title{
+      font-size: clamp(30px, 3.2vw, 46px);
+      line-height: 1.1;
       margin: 0;
       color: #0b1220;
       letter-spacing: -0.02em;
     }
-    #featured-work .featured__subtitle{
+    .case-studies__subtitle{
       margin: 10px auto 0;
-      max-width: 62ch;
+      max-width: 68ch;
       color: rgba(11,18,32,.70);
       font-size: 16px;
       line-height: 1.6;
     }
-    #featured-work .featured__grid{
+
+    .case-list{
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
-      margin-top: 26px;
-    }
-    @media (max-width: 980px){
-      #featured-work .featured__grid{ grid-template-columns: 1fr; }
+      margin-top: 28px;
     }
 
-    #featured-work .work-card{
-      background: #fff;
+    .case{
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      align-items: stretch;
+      background: rgba(255,255,255,.92);
       border: 1px solid rgba(11,18,32,.10);
-      box-shadow: 0 14px 40px rgba(11,18,32,.10);
-      border-radius: 22px;
-      padding: 22px;
+      border-radius: 26px;
+      box-shadow: 0 18px 55px rgba(11,18,32,.10);
+      overflow: hidden;
+    }
+    @media (max-width: 980px){
+      .case{ grid-template-columns: 1fr; }
+    }
+
+    .case__media{
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(37,99,235,.12), rgba(124,58,237,.08), rgba(11,18,32,0));
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 260px;
+    }
+    .case__media img,
+    .case__media video{
+      width: 100%;
+      height: 100%;
+      max-height: 360px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid rgba(11,18,32,.10);
+      background: rgba(11,18,32,.03);
+    }
+
+    .case__content{
+      padding: 22px 22px 20px;
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
-    #featured-work .work-card__top{
-      display: flex;
-      gap: 14px;
-      align-items: center;
-    }
-    #featured-work .work__icon{
-      width: 44px;
-      height: 44px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      background: rgba(11,18,32,.05);
-      flex: 0 0 auto;
-    }
-    #featured-work .work__icon--ops{ background: rgba(37,99,235,.14); color: #2563eb; }
-    #featured-work .work__icon--quality{ background: rgba(22,163,74,.14); color: #16a34a; }
-    #featured-work .work__icon--growth{ background: rgba(124,58,237,.14); color: #7c3aed; }
 
-    #featured-work .work-card__title{
+    .case__kicker{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(11,18,32,.72);
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .case__heading{
       margin: 0;
-      font-size: 20px;
-      line-height: 1.25;
+      font-size: 22px;
+      line-height: 1.2;
       color: #0b1220;
       letter-spacing: -0.01em;
     }
-    #featured-work .work-card__metric{
-      margin: 6px 0 0;
-      font-size: 14px;
-      font-weight: 800;
-      color: rgba(11,18,32,.84);
-    }
-    #featured-work .work-card__image{
-      width: 100%;
-      height: 164px;
-      object-fit: cover;
-      border-radius: 16px;
-      border: 1px solid rgba(11,18,32,.10);
-      background: rgba(11,18,32,.03);
-    }
-    #featured-work .work-card__desc{
-      margin: 0;
-      color: rgba(11,18,32,.70);
-      font-size: 15px;
-      line-height: 1.6;
-    }
-    #featured-work .work-card__bullets{
-      margin: 0;
-      padding-left: 18px;
-      color: rgba(11,18,32,.74);
-      font-size: 14px;
-      line-height: 1.6;
-    }
-    #featured-work .work-card__tags{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+
+    .impact{
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
       margin-top: 2px;
     }
-    #featured-work .tag{
-      display: inline-flex;
-      align-items: center;
-      padding: 6px 10px;
-      border-radius: 999px;
+    @media (max-width: 520px){
+      .impact{ grid-template-columns: 1fr; }
+    }
+    .impact__stat{
       border: 1px solid rgba(11,18,32,.10);
-      background: rgba(11,18,32,.03);
-      color: rgba(11,18,32,.72);
-      font-size: 12px;
-      font-weight: 650;
-      letter-spacing: .01em;
+      background: rgba(11,18,32,.02);
+      border-radius: 16px;
+      padding: 12px 12px 10px;
     }
-    #featured-work .work-card__links{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 6px;
-    }
-    #featured-work .work-link{
-      text-decoration: none;
-      font-weight: 800;
-      font-size: 14px;
+    .impact__value{
+      margin: 0;
+      font-size: 18px;
+      font-weight: 900;
       color: rgba(11,18,32,.88);
-      border-bottom: 1px solid rgba(11,18,32,.28);
-      padding-bottom: 2px;
+      letter-spacing: -0.01em;
     }
-    #featured-work .work-link:hover{
-      border-bottom-color: rgba(11,18,32,.60);
-    }
-    #featured-work .work-card__footnote{
+    .impact__label{
       margin: 4px 0 0;
       font-size: 12.5px;
-      line-height: 1.5;
+      color: rgba(11,18,32,.62);
+      line-height: 1.35;
+    }
+
+    .case__desc{
+      margin: 2px 0 0;
+      color: rgba(11,18,32,.72);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .case__bullets{
+      margin: 0;
+      padding-left: 18px;
+      color: rgba(11,18,32,.70);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .case__ctaRow{
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 16px;
+      font-weight: 900;
+      font-size: 14px;
+      text-decoration: none;
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+      border: 1px solid rgba(11,18,32,.14);
+    }
+    .btn:hover{ transform: translateY(-1px); }
+
+    .btn--primary{
+      background: rgba(37,99,235,1);
+      color: #fff;
+      border-color: rgba(37,99,235,.25);
+    }
+    .btn--primary:hover{ background: rgba(29,78,216,1); }
+
+    .btn--ghost{
+      background: #fff;
+      color: rgba(11,18,32,.86);
+    }
+    .note{
+      font-size: 12.5px;
       color: rgba(11,18,32,.58);
+      line-height: 1.5;
+      margin: 0;
     }
   </style>
 </head>
@@ -184,7 +231,7 @@
   <main class="max-w-6xl mx-auto px-6 py-16 lg:py-24">
 
     <!-- Hero -->
-    <section class="mb-14 lg:mb-20">
+    <section class="mb-14 lg:mb-16">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         <div class="lg:col-span-7 text-center lg:text-left">
           <p class="text-sm tracking-widest uppercase text-gray-500 mb-4">
@@ -229,195 +276,183 @@
       </div>
     </section>
 
-    <!-- Formerly of + Logo reel (gapless) -->
-    <section class="py-10 bg-white/80 backdrop-blur-md rounded-3xl mx-0 my-12 lg:-mt-6 border border-gray-200 shadow-2xl">
+    <!-- Formerly of (GAPLESS) -->
+    <section class="py-10 bg-white/80 backdrop-blur-md rounded-3xl mx-0 my-10 border border-gray-200 shadow-2xl">
       <p class="px-10 pb-2 text-xs uppercase tracking-widest text-gray-500">Formerly of</p>
 
-      <div class="overflow-hidden [mask-image:linear-gradient(to_right,transparent_0,white_10%,white_90%,transparent_100%)]">
-        <div class="flex marquee-track whitespace-nowrap">
-          <div class="flex items-center gap-12 px-10 py-8 flex-shrink-0">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="UK Parliament" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nandos.png" alt="Nando's" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="Civil Service" loading="lazy">
-            <img class="h-8 w-auto flex-shrink-0 object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy">
-
-            <!-- repeats omitted for brevity; keep yours as-is -->
-          </div>
-
-          <div class="flex items-center gap-12 px-10 py-8 flex-shrink-0" aria-hidden="true">
-            <!-- duplicates omitted for brevity; keep yours as-is -->
-          </div>
+      <div class="marquee px-10 py-8 [mask-image:linear-gradient(to_right,transparent_0,white_10%,white_90%,transparent_100%)]">
+        <div class="marquee__track" id="logoTrack">
+          <!-- ONE set only (JS duplicates it reliably) -->
+          <img class="h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="UK Parliament" loading="lazy">
+          <img class="h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy">
+          <img class="h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy">
+          <img class="h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nandos.png" alt="Nando's" loading="lazy">
+          <img class="h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/civil-service.png" alt="Civil Service" loading="lazy">
+          <img class="h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/holland-and-barrett.png" alt="Holland & Barrett" loading="lazy">
         </div>
       </div>
     </section>
 
-    <!-- Featured Work -->
-    <section id="featured-work">
-      <div class="featured__container">
-        <header class="featured__header">
-          <h2 class="featured__title">Featured Work</h2>
-          <p class="featured__subtitle">
-            PM-led outcomes with clear metrics — improving service efficiency, clinician productivity, and patient experience.
+    <!-- Visual Featured Work -->
+    <section id="featured-work" class="case-studies">
+      <div class="case-studies__wrap">
+        <header class="case-studies__header">
+          <h2 class="case-studies__title">Featured Work</h2>
+          <p class="case-studies__subtitle">
+            Product management case studies with clear metrics — service efficiency, clinician productivity, and growth.
           </p>
         </header>
 
-        <div class="featured__grid">
+        <div class="case-list">
 
-          <!-- 1) Nurse Chat -->
-          <article class="work-card">
-            <div class="work-card__top">
-              <div class="work__icon work__icon--ops" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                  <path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
+          <!-- Case 1 -->
+          <article class="case">
+            <div class="case__media">
+              <img src="/assets/featured/nurse-chat.gif"
+                   alt="Nurse chat experience (GIF or screenshot)"
+                   loading="lazy"
+                   onerror="this.style.display='none'">
+            </div>
+
+            <div class="case__content">
+              <div class="case__kicker"><i class="fa-solid fa-comments"></i> Service efficiency</div>
+              <h3 class="case__heading">Nurse Chat workflow → lower workload, faster resolution</h3>
+
+              <div class="impact">
+                <div class="impact__stat">
+                  <p class="impact__value">42% less</p>
+                  <p class="impact__label">Nurse time in chat (10 min vs 24 min comparison)</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">29% fewer</p>
+                  <p class="impact__label">Nurse messages per chat</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">41.5% fewer</p>
+                  <p class="impact__label">“No‑response” patients in chat</p>
+                </div>
               </div>
 
-              <div>
-                <h3 class="work-card__title">Nurse Chat → Service efficiency</h3>
-                <p class="work-card__metric">
-                  42% less nurse time • 29% fewer nurse messages • 41.5% fewer “no‑response” chats
-                </p>
-              </div>
-            </div>
+              <p class="case__desc">
+                I owned the chat product workflow end‑to‑end: clarified the operational problem, aligned clinical + engineering,
+                defined success metrics, and iterated in production to reduce workload without compromising care quality.
+              </p>
 
-            <img
-              class="work-card__image"
-              src="/assets/featured/nurse-chat.png"
-              alt="Screenshot or illustration of nurse chat experience"
-              loading="lazy"
-              onerror="this.style.display='none'"
-            />
+              <ul class="case__bullets">
+                <li>Instrumented key steps (entry → context capture → nurse response → resolution) to focus iteration on bottlenecks.</li>
+                <li>Ran tight experiments and shipped incremental improvements with measurable ops impact.</li>
+                <li>Worked closely with clinicians on assistive note‑drafting experiments (my AI contribution) rather than claiming full automation.</li>
+              </ul>
 
-            <p class="work-card__desc">
-              I led the product direction for chat workflow: clarifying the operational problem, aligning clinical + engineering teams,
-              defining success metrics, and iterating in production to reduce nurse workload while maintaining care quality.
-            </p>
-
-            <ul class="work-card__bullets">
-              <li>42% less nurse time in chat (10 minutes average vs 24 minutes in the comparison group).</li>
-              <li>29% fewer nurse messages per chat.</li>
-              <li>41.5% reduction in “no‑response” patients.</li>
-            </ul>
-
-            <div class="work-card__tags">
-              <span class="tag">#Chat</span>
-              <span class="tag">#ServiceEfficiency</span>
-              <span class="tag">#ClinicalOps</span>
-              <span class="tag">#Metrics</span>
-            </div>
-
-            <div class="work-card__links">
-              <a class="work-link" href="https://www.kry.tech/spotlight/ai-powered-nurse-chat" target="_blank" rel="noreferrer">
-                Kry spotlight (metrics) →
-              </a>
-            </div>
-
-            <p class="work-card__footnote">
-              My AI contribution here was clinician‑in‑the‑loop experimentation to help doctors/nurses draft case notes faster.
-              The broader AI automation described publicly expanded after I left.
-            </p>
-          </article>
-
-          <!-- 2) Consultation workflow -->
-          <article class="work-card">
-            <div class="work-card__top">
-              <div class="work__icon work__icon--quality" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                  <path d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4Z" stroke="currentColor" stroke-width="2"/>
-                  <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+              <div class="case__ctaRow">
+                <a class="btn btn--primary" href="https://www.kry.tech/spotlight/ai-powered-nurse-chat" target="_blank" rel="noreferrer">
+                  Read the metrics <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="btn btn--ghost" href="https://colinpattinson.github.io/Kry-Wins/" target="_blank" rel="noreferrer">
+                  My case study <i class="fa-solid fa-file-lines"></i>
+                </a>
               </div>
 
-              <div>
-                <h3 class="work-card__title">Consultation workflow → Throughput</h3>
-                <p class="work-card__metric">7.28 appointments per hour</p>
-              </div>
-            </div>
-
-            <img
-              class="work-card__image"
-              src="/assets/featured/consultation-workflow.png"
-              alt="Screenshot or illustration of consultation workflow"
-              loading="lazy"
-              onerror="this.style.display='none'"
-            />
-
-            <p class="work-card__desc">
-              Shaped the clinician experience to reduce cognitive load and admin friction, improving onboarding and day‑to‑day flow so
-              clinicians can stay efficient while focusing on the patient.
-            </p>
-
-            <ul class="work-card__bullets">
-              <li>Built around focus modes and information hierarchy to make complex workflows learnable and fast.</li>
-              <li>Used operational feedback loops (clinician feedback + workflow signals) to prioritise the highest leverage fixes.</li>
-              <li>Supported a service model achieving 7.28 appointments per hour.</li>
-            </ul>
-
-            <div class="work-card__tags">
-              <span class="tag">#ClinicianUX</span>
-              <span class="tag">#Workflow</span>
-              <span class="tag">#Ops</span>
-              <span class="tag">#Quality</span>
-            </div>
-
-            <div class="work-card__links">
-              <a class="work-link" href="https://www.kry.tech/spotlight/consultation-experience" target="_blank" rel="noreferrer">
-                Kry spotlight →
-              </a>
+              <p class="note">
+                Accuracy note: my AI work focused on clinician‑in‑the‑loop note drafting; broader automation described publicly expanded after I left.
+              </p>
             </div>
           </article>
 
-          <!-- 3) Partnership integration -->
-          <article class="work-card">
-            <div class="work-card__top">
-              <div class="work__icon work__icon--growth" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-                  <path d="M4 16l6-6 4 4 6-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M20 6v6h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-
-              <div>
-                <h3 class="work-card__title">Partnership integration → Activation</h3>
-                <p class="work-card__metric">0→1 integration shipped; activation uplift (see case study)</p>
-              </div>
+          <!-- Case 2 -->
+          <article class="case">
+            <div class="case__media">
+              <img src="/assets/featured/consultation-workflow.gif"
+                   alt="Consultation workflow (GIF or screenshot)"
+                   loading="lazy"
+                   onerror="this.style.display='none'">
             </div>
 
-            <img
-              class="work-card__image"
-              src="/assets/featured/partnership-integration.png"
-              alt="Screenshot or illustration of partnership integration work"
-              loading="lazy"
-              onerror="this.style.display='none'"
-            />
+            <div class="case__content">
+              <div class="case__kicker"><i class="fa-solid fa-user-doctor"></i> Clinician productivity</div>
+              <h3 class="case__heading">Consultation experience → throughput at scale</h3>
 
-            <p class="work-card__desc">
-              Led a constrained integration from discovery through launch — aligned partner stakeholders, scoped MVP,
-              and set up instrumentation to prove impact on activation and engagement.
-            </p>
+              <div class="impact">
+                <div class="impact__stat">
+                  <p class="impact__value">7.28</p>
+                  <p class="impact__label">Appointments per hour (service efficiency)</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">Lower</p>
+                  <p class="impact__label">Cognitive load via focus modes + information hierarchy</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">Faster</p>
+                  <p class="impact__label">Onboarding & day‑to‑day flow via consistent patterns</p>
+                </div>
+              </div>
 
-            <ul class="work-card__bullets">
-              <li>Framed scope around the activation funnel and the smallest testable path to value.</li>
-              <li>Delivered iteratively to manage risk and keep multiple teams aligned.</li>
-              <li>Documented trade‑offs and outcomes clearly for future teams (and hiring managers).</li>
-            </ul>
+              <p class="case__desc">
+                Shaped the clinician workflow so it’s learnable, fast, and consistent — reducing admin friction and helping clinicians
+                stay focused on the patient while supporting high throughput.
+              </p>
 
-            <div class="work-card__tags">
-              <span class="tag">#0to1</span>
-              <span class="tag">#Activation</span>
-              <span class="tag">#Partnerships</span>
-              <span class="tag">#Analytics</span>
+              <ul class="case__bullets">
+                <li>Prioritised changes using a blend of operational feedback and workflow signals.</li>
+                <li>Improved “what to do next” clarity, reducing interruptions and context switching.</li>
+                <li>Supported documentation improvements through pragmatic tooling and clinician collaboration.</li>
+              </ul>
+
+              <div class="case__ctaRow">
+                <a class="btn btn--primary" href="https://www.kry.tech/spotlight/consultation-experience" target="_blank" rel="noreferrer">
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="btn btn--ghost" href="https://colinpattinson.github.io/kry-anniversary/" target="_blank" rel="noreferrer">
+                  My reflection <i class="fa-solid fa-file-lines"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3 -->
+          <article class="case">
+            <div class="case__media">
+              <img src="/assets/featured/partnership-integration.gif"
+                   alt="Partnership integration (GIF or screenshot)"
+                   loading="lazy"
+                   onerror="this.style.display='none'">
             </div>
 
-            <div class="work-card__links">
-              <a class="work-link" href="https://colinpattinson.github.io/Kry-Wins/" target="_blank" rel="noreferrer">
-                Read my case study →
-              </a>
-              <a class="work-link" href="https://colinpattinson.github.io/kry-anniversary/" target="_blank" rel="noreferrer">
-                Read my reflection →
-              </a>
+            <div class="case__content">
+              <div class="case__kicker"><i class="fa-solid fa-arrow-trend-up"></i> Growth</div>
+              <h3 class="case__heading">Partnership integration → activation & engagement</h3>
+
+              <div class="impact">
+                <div class="impact__stat">
+                  <p class="impact__value">0→1</p>
+                  <p class="impact__label">Integration shipped under tight constraints</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">Funnel‑led</p>
+                  <p class="impact__label">Scoped around activation and measurable value</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">Iterative</p>
+                  <p class="impact__label">Reduced risk; kept partner teams aligned</p>
+                </div>
+              </div>
+
+              <p class="case__desc">
+                Led a constrained integration from discovery through launch — aligned stakeholders, scoped MVP, and set up instrumentation
+                to prove impact on activation and engagement.
+              </p>
+
+              <ul class="case__bullets">
+                <li>Framed scope around the smallest testable path to value (and what we’d measure).</li>
+                <li>Delivered in increments to manage dependencies and risk.</li>
+                <li>Captured trade‑offs and learnings so the approach is reusable.</li>
+              </ul>
+
+              <div class="case__ctaRow">
+                <a class="btn btn--primary" href="https://colinpattinson.github.io/Kry-Wins/" target="_blank" rel="noreferrer">
+                  Read my case study <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
             </div>
           </article>
 
@@ -430,5 +465,47 @@
     </footer>
 
   </main>
+
+  <script>
+    // Gapless marquee: duplicate exactly one "half" at runtime and scroll by that exact width.
+    (function(){
+      const track = document.getElementById('logoTrack');
+      if (!track) return;
+
+      // Build the clone once (prevents repeated duplication during hot reloads).
+      if (!track.dataset.duped) {
+        const half = document.createElement('div');
+        half.className = 'marquee__half';
+        half.style.display = 'flex';
+        half.style.alignItems = 'center';
+        half.style.gap = 'var(--gap)';
+        half.style.width = 'max-content';
+
+        // Move existing nodes into the first half wrapper
+        while (track.firstChild) half.appendChild(track.firstChild);
+        track.appendChild(half);
+
+        // Clone the half and append
+        const clone = half.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
+
+        track.dataset.duped = 'true';
+      }
+
+      const setHalfWidth = () => {
+        const half = track.querySelector('.marquee__half');
+        if (!half) return;
+        const w = half.getBoundingClientRect().width;
+        track.style.setProperty('--marquee-half', w + 'px');
+      };
+
+      // Recalc after images load and on resize (prevents gaps on different screen widths).
+      window.addEventListener('load', setHalfWidth);
+      window.addEventListener('resize', setHalfWidth);
+      setHalfWidth();
+    })();
+  </script>
+
 </body>
 </html>
