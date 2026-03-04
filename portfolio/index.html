@@ -8,18 +8,19 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
   <style>
     body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif; }
 
-    /* ---------- Gapless marquee (no more manual duplication) ---------- */
+    /* ---------- Gapless marquee ---------- */
     .marquee {
       --duration: 34s;
       --gap: 3rem;
       position: relative;
       overflow: hidden;
     }
-    .marquee__track{
+    .marquee__track {
       display: flex;
       align-items: center;
       gap: var(--gap);
@@ -31,23 +32,23 @@
     @media (prefers-reduced-motion: reduce) {
       .marquee__track { animation: none !important; transform: none !important; }
     }
-    @keyframes marqueeScroll{
+    @keyframes marqueeScroll {
       from { transform: translateX(0); }
-      to { transform: translateX(calc(-1 * var(--marquee-half, 0px))); }
+      to   { transform: translateX(calc(-1 * var(--marquee-half, 0px))); }
     }
 
-    /* ---------- Visual case-study list (scales to 10+ items) ---------- */
-    .case-studies{ padding: 48px 0 12px; }
-    .case-studies__wrap{ width: min(1100px, 92vw); margin: 0 auto; }
-    .case-studies__header{ text-align: center; margin-bottom: 26px; }
-    .case-studies__title{
+    /* ---------- Case studies ---------- */
+    .case-studies { padding: 48px 0 12px; }
+    .case-studies__wrap { width: min(1100px, 92vw); margin: 0 auto; }
+    .case-studies__header { text-align: center; margin-bottom: 26px; }
+    .case-studies__title {
       font-size: clamp(30px, 3.2vw, 46px);
       line-height: 1.1;
       margin: 0;
       color: #0b1220;
       letter-spacing: -0.02em;
     }
-    .case-studies__subtitle{
+    .case-studies__subtitle {
       margin: 10px auto 0;
       max-width: 68ch;
       color: rgba(11,18,32,.70);
@@ -55,16 +56,15 @@
       line-height: 1.6;
     }
 
-    .case-list{
+    .case-list {
       display: grid;
-      gap: 34px;            /* MORE SPACE BETWEEN EXAMPLES */
+      gap: 34px;
       margin-top: 34px;
     }
-    @media (max-width: 980px){
-      .case-list{ gap: 24px; }
-    }
+    @media (max-width: 980px) { .case-list { gap: 24px; } }
 
-    .case{
+    /* Base case card */
+    .case {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
       gap: 18px;
@@ -74,12 +74,36 @@
       border-radius: 26px;
       box-shadow: 0 18px 55px rgba(11,18,32,.10);
       overflow: hidden;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
     }
-    @media (max-width: 980px){
-      .case{ grid-template-columns: 1fr; }
+    .case:hover {
+      box-shadow: 0 24px 70px rgba(11,18,32,.16);
+      transform: translateY(-2px);
     }
 
-    .case__media{
+    /* Zigzag: even cases flip media to the right */
+    .case:nth-child(even) {
+      grid-template-columns: 0.9fr 1.1fr;
+    }
+    .case:nth-child(even) .case__media {
+      order: 2;
+    }
+    .case:nth-child(even) .case__content {
+      order: 1;
+    }
+
+    @media (max-width: 980px) {
+      .case,
+      .case:nth-child(even) {
+        grid-template-columns: 1fr;
+      }
+      .case:nth-child(even) .case__media,
+      .case:nth-child(even) .case__content {
+        order: unset;
+      }
+    }
+
+    .case__media {
       background: radial-gradient(1200px 600px at 10% 0%, rgba(37,99,235,.12), rgba(124,58,237,.08), rgba(11,18,32,0));
       padding: 18px;
       display: flex;
@@ -88,7 +112,7 @@
       min-height: 260px;
     }
     .case__media img,
-    .case__media video{
+    .case__media video {
       width: 100%;
       height: 100%;
       max-height: 360px;
@@ -98,14 +122,14 @@
       background: rgba(11,18,32,.03);
     }
 
-    .case__content{
+    .case__content {
       padding: 22px 22px 20px;
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
-    .case__kicker{
+    .case__kicker {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -116,7 +140,7 @@
       font-size: 12px;
     }
 
-    .case__heading{
+    .case__heading {
       margin: 0;
       font-size: 22px;
       line-height: 1.2;
@@ -124,43 +148,49 @@
       letter-spacing: -0.01em;
     }
 
-    .impact{
+    .impact {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 10px;
       margin-top: 2px;
     }
-    @media (max-width: 520px){
-      .impact{ grid-template-columns: 1fr; }
-    }
-    .impact__stat{
+    @media (max-width: 520px) { .impact { grid-template-columns: 1fr; } }
+
+    .impact__stat {
       border: 1px solid rgba(11,18,32,.10);
       background: rgba(11,18,32,.02);
       border-radius: 16px;
       padding: 12px 12px 10px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      cursor: default;
     }
-    .impact__value{
+    .impact__stat:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(37,99,235,.12);
+    }
+
+    .impact__value {
       margin: 0;
       font-size: 18px;
       font-weight: 900;
       color: rgba(11,18,32,.88);
       letter-spacing: -0.01em;
     }
-    .impact__label{
+    .impact__label {
       margin: 4px 0 0;
       font-size: 12.5px;
       color: rgba(11,18,32,.62);
       line-height: 1.35;
     }
 
-    .case__desc{
+    .case__desc {
       margin: 2px 0 0;
       color: rgba(11,18,32,.72);
       font-size: 15px;
       line-height: 1.65;
     }
 
-    .case__bullets{
+    .case__bullets {
       margin: 0;
       padding-left: 18px;
       color: rgba(11,18,32,.70);
@@ -168,7 +198,7 @@
       line-height: 1.6;
     }
 
-    .case__ctaRow{
+    .case__ctaRow {
       margin-top: auto;
       display: flex;
       flex-wrap: wrap;
@@ -176,7 +206,7 @@
       align-items: center;
     }
 
-    .btn{
+    .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -189,24 +219,102 @@
       transition: transform .08s ease, background .2s ease, border-color .2s ease;
       border: 1px solid rgba(11,18,32,.14);
     }
-    .btn:hover{ transform: translateY(-1px); }
+    .btn:hover { transform: translateY(-1px); }
 
-    .btn--primary{
+    .btn--primary {
       background: rgba(37,99,235,1);
       color: #fff;
       border-color: rgba(37,99,235,.25);
     }
-    .btn--primary:hover{ background: rgba(29,78,216,1); }
+    .btn--primary:hover { background: rgba(29,78,216,1); }
 
-    .btn--ghost{
+    .btn--ghost {
       background: #fff;
       color: rgba(11,18,32,.86);
     }
-    .note{
+
+    .note {
       font-size: 12.5px;
       color: rgba(11,18,32,.58);
       line-height: 1.5;
       margin: 0;
+    }
+
+    /* ---------- Award badge ---------- */
+    .award-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+      color: #fff;
+      border-radius: 20px;
+      padding: 20px 32px;
+      margin: 48px auto;
+      max-width: 700px;
+      box-shadow: 0 12px 40px rgba(37,99,235,.25);
+      text-align: center;
+    }
+    .award-badge__icon { font-size: 2rem; }
+    .award-badge__text strong { display: block; font-size: 1.1rem; font-weight: 900; }
+    .award-badge__text span { font-size: 0.9rem; opacity: 0.88; }
+
+    /* ---------- Testimonials ---------- */
+    .testimonials-section {
+      width: min(1100px, 92vw);
+      margin: 56px auto 0;
+    }
+    .testimonials-section__title {
+      text-align: center;
+      font-size: clamp(24px, 2.5vw, 36px);
+      font-weight: 900;
+      color: #0b1220;
+      letter-spacing: -0.02em;
+      margin-bottom: 32px;
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 760px) {
+      .testimonials-grid { grid-template-columns: 1fr; }
+    }
+    .testimonial-card {
+      background: rgba(255,255,255,.92);
+      border: 1px solid rgba(11,18,32,.10);
+      border-radius: 22px;
+      padding: 24px 26px;
+      box-shadow: 0 10px 36px rgba(11,18,32,.08);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .testimonial-card__quote {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(11,18,32,.78);
+      font-style: italic;
+      margin: 0;
+      flex: 1;
+    }
+    .testimonial-card__quote::before { content: '\201C'; }
+    .testimonial-card__quote::after  { content: '\201D'; }
+    .testimonial-card__author {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      border-top: 1px solid rgba(11,18,32,.08);
+      padding-top: 12px;
+    }
+    .testimonial-card__name {
+      font-weight: 900;
+      font-size: 14px;
+      color: #0b1220;
+    }
+    .testimonial-card__role {
+      font-size: 12.5px;
+      color: rgba(11,18,32,.55);
     }
   </style>
 </head>
@@ -232,52 +340,40 @@
           <p class="text-sm tracking-widest uppercase text-gray-500 mb-4">
             Product Leader · 9+ years shipping products teams and users love
           </p>
-
           <h1 class="text-5xl lg:text-7xl font-black text-slate-900 leading-tight">
-            Hi, I’m <span class="text-blue-700">Colin</span>.<br />
+            Hi, I'm <span class="text-blue-700">Colin</span>.<br />
             I make products users <span class="italic text-slate-600">adore</span>.
           </h1>
-
           <p class="text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto lg:mx-0 leading-relaxed mt-6">
             I love turning fuzzy problems into innovative digital services — and I can help your team do the same.
           </p>
-
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mt-10">
             <a href="mailto:colin.og.pattinson@gmail.com"
                class="bg-blue-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center">
               <i class="fas fa-envelope mr-2"></i> Get in Touch
             </a>
-
             <a href="https://linkedin.com/in/colinpattinson"
                class="border-2 border-gray-300 text-gray-800 px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-gray-50 transition flex items-center justify-center">
               <i class="fab fa-linkedin mr-2"></i> LinkedIn
             </a>
           </div>
         </div>
-
         <div class="lg:col-span-5 flex justify-center lg:justify-end">
           <div class="relative">
             <div class="absolute -inset-3 bg-gradient-to-br from-blue-200 to-indigo-200 rounded-[2.5rem] blur-xl opacity-60"></div>
-            <img
-              src="/assets/img/logo.jpg"
-              alt="Colin headshot"
-              class="relative w-40 h-40 lg:w-56 lg:h-56 object-cover rounded-[2.25rem] ring-4 ring-white shadow-2xl"
-              loading="lazy"
-              width="224"
-              height="224"
-            />
+            <img src="/assets/img/logo.jpg" alt="Colin headshot"
+                 class="relative w-40 h-40 lg:w-56 lg:h-56 object-cover rounded-[2.25rem] ring-4 ring-white shadow-2xl"
+                 loading="lazy" width="224" height="224" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Formerly of (GAPLESS) -->
+    <!-- Formerly of -->
     <section class="py-10 bg-white/80 backdrop-blur-md rounded-3xl mx-0 my-10 border border-gray-200 shadow-2xl">
       <p class="px-10 pb-2 text-xs uppercase tracking-widest text-gray-500">Formerly of</p>
-
       <div class="marquee px-10 py-8 [mask-image:linear-gradient(to_right,transparent_0,white_10%,white_90%,transparent_100%)]">
         <div class="marquee__track" id="logoTrack">
-          <!-- ONE set only (JS duplicates it reliably) -->
           <img class="h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/uk-parliament.png" alt="UK Parliament" loading="lazy">
           <img class="h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/nhs.png" alt="NHS" loading="lazy">
           <img class="h-8 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="/portfolio/images/logos/kry.png" alt="Kry" loading="lazy">
@@ -288,7 +384,7 @@
       </div>
     </section>
 
-    <!-- Visual Featured Work -->
+    <!-- Featured Work -->
     <section id="featured-work" class="case-studies">
       <div class="case-studies__wrap">
         <header class="case-studies__header">
@@ -298,22 +394,17 @@
           </p>
         </header>
 
-        <!-- IMPORTANT: ALL cases are inside this one container -->
         <div class="case-list">
 
-          <!-- Case 1 -->
-          <article class="case">
+          <!-- Case 1: AI / Kry chat (image LEFT) -->
+          <article class="case" data-aos="fade-up">
             <div class="case__media">
               <img src="https://raw.githubusercontent.com/ColinPattinson/colinpattinson.github.io/master/assets/img/OjaXAwVQxyxRrwnhugnM0Kk8m1Q.gif"
-                   alt="Nurse chat experience (GIF)"
-                   loading="lazy"
-                   onerror="this.style.display='none'">
+                   alt="Nurse chat experience (GIF)" loading="lazy" onerror="this.style.display='none'">
             </div>
-
             <div class="case__content">
               <div class="case__kicker"><i class="fa-solid fa-comments"></i> AI Innovation</div>
               <h3 class="case__heading">Reducing workload of clinicians using AI</h3>
-
               <div class="impact">
                 <div class="impact__stat">
                   <p class="impact__value">42% less</p>
@@ -325,21 +416,18 @@
                 </div>
                 <div class="impact__stat">
                   <p class="impact__value">41.5% fewer</p>
-                  <p class="impact__label">“No‑response” patients in chat</p>
+                  <p class="impact__label">"No‑response" patients in chat</p>
                 </div>
               </div>
-
               <p class="case__desc">
-                I delivered the chat product from inception: clarified the operational problem, aligned clinical + engineering,
+                Delivered the chat product from inception: clarified the operational problem, aligned clinical + engineering,
                 defined success metrics and iterated in production to reduce workload without compromising care quality.
               </p>
-
               <ul class="case__bullets">
-                <li>Created to clinicians could deal with multiple patients at once</li>
+                <li>Enabled clinicians to handle multiple patients simultaneously.</li>
                 <li>Ran tight experiments and shipped incremental improvements with measurable impact.</li>
                 <li>Worked on AI assistive note‑taking to reduce admin burden for clinicians.</li>
               </ul>
-
               <div class="case__ctaRow">
                 <a class="btn btn--primary" href="https://www.kry.tech/spotlight/ai-powered-nurse-chat" target="_blank" rel="noreferrer">
                   Read the metrics <i class="fa-solid fa-arrow-right"></i>
@@ -351,45 +439,160 @@
             </div>
           </article>
 
-          <!-- Case 2 -->
-          <article class="case">
+          <!-- Case 2: HBMe 0→1 (image RIGHT via zigzag) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
             <div class="case__media">
-              <img src="https://cdn.prod.website-files.com/65afc9f3499a638404eb89b2/65c91beac254bb0f97e0d378_UI%20-%20Consultation.png"
-                   alt="Consultation workflow"
-                   loading="lazy"
-                   onerror="this.style.display='none'">
+              <video poster="https://d2q79iu7y748jz.cloudfront.net/s/_customcontent/e00d7c4d66bd5915f45368c631daf787"
+                     autoplay loop muted playsinline preload="metadata"
+                     style="width:100%;height:auto;object-fit:cover;border-radius:inherit;"
+                     onerror="this.style.display='none'">
+                <source src="/assets/videos/hbme-release.mp4" type="video/mp4">
+                <img src="https://d2q79iu7y748jz.cloudfront.net/s/_customcontent/e00d7c4d66bd5915f45368c631daf787"
+                     alt="H&B&Me app release demo" loading="lazy">
+              </video>
             </div>
-
             <div class="case__content">
-              <div class="case__kicker"><i class="fa-solid fa-user-doctor"></i> Service efficiency</div>
-              <h3 class="case__heading">Consultation experience → efficiency at scale</h3>
-
+              <div class="case__kicker"><i class="fa-solid fa-rocket"></i> 0→1 build</div>
+              <h3 class="case__heading">H&B&Me → shipped a new consumer health experience from scratch</h3>
               <div class="impact">
                 <div class="impact__stat">
-                  <p class="impact__value">7.28</p>
-                  <p class="impact__label">Appointments per hour (industry leading service efficiency)</p>
+                  <p class="impact__value">0→1</p>
+                  <p class="impact__label">New product shipped from discovery to launch</p>
                 </div>
                 <div class="impact__stat">
-                  <p class="impact__value">99.9%</p>
-                  <p class="impact__label">Uptime, with us reducing the number of downtime/incidents per year</p>
+                  <p class="impact__value">20 weeks</p>
+                  <p class="impact__label">Day 1 to MVP in a large organisation</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">Expert-led</p>
+                  <p class="impact__label">Clinicians, design, engineering, commercial collaboration</p>
+                </div>
+              </div>
+              <p class="case__desc">
+                End‑to‑end product delivery from problem discovery through MVP and launch, balancing clinical quality, usability and commercial outcomes.
+              </p>
+              <ul class="case__bullets">
+                <li>Defined the problem using user research + behavioural signals, then translated it into an MVP roadmap.</li>
+                <li>Set success metrics early (activation, retention, satisfaction) and used them to guide iteration.</li>
+                <li>Created clear narratives for stakeholders to align on scope and trade‑offs.</li>
+              </ul>
+              <div class="case__ctaRow">
+                <a class="btn btn--primary" href="https://colinpattinson.github.io/hbme-wins/" rel="noreferrer">
+                  Read the case study <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 3: Kry cost reduction (image LEFT) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
+            <div class="case__media">
+              <img src="https://cdn.aptoide.com/imgs/9/2/a/92ad473f8a31f06547e30bc817975c0c_fgraphic.png"
+                   alt="Kry video meeting" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="case__content">
+              <div class="case__kicker"><i class="fa-solid fa-pound-sign"></i> Cost reduction</div>
+              <h3 class="case__heading">Kry → 55% cost reduction + 65% clinician efficiency gain</h3>
+              <div class="impact">
+                <div class="impact__stat">
+                  <p class="impact__value">-54.6%</p>
+                  <p class="impact__label">Video call cost/min via supplier switch</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">+65.9%</p>
+                  <p class="impact__label">Meetings/hour on Kry Pro (vs legacy)</p>
                 </div>
                 <div class="impact__stat">
                   <p class="impact__value">69.3%</p>
-                  <p class="impact__label">Meetings saved using voice calling features if video fails</p>
+                  <p class="impact__label">No-show meetings rescued via voice fallback</p>
                 </div>
               </div>
-
               <p class="case__desc">
-                Shaped the clinician workflow so it’s learnable, fast, and consistent - reducing admin friction and helping clinicians
-                stay focused on the patient while supporting high throughput.
+                Drove profitability via ops deep-dive: renegotiated video contracts, migrated to efficient platform and salvaged no-shows — more throughput from the same clinicians.
               </p>
-
               <ul class="case__bullets">
-                <li>Prioritised changes after deep research with users.</li>
-                <li>Reduced interruptions and context switching for clinicians running consultations.</li>
+                <li>Audited contracts/invoices → switched suppliers for 54.6% video cost drop + fewer faults.</li>
+                <li>Led Kry Pro migration: doubled clinician productivity without quality loss.</li>
+                <li>Shipped voice fallback: rescued 69.3% of meetings that would have been lost, maximising utilisation.</li>
+              </ul>
+              <div class="case__ctaRow">
+                <a class="btn btn--primary" href="https://colinpattinson.github.io/Kry-Wins/" target="_blank" rel="noreferrer">
+                  Read the write-up <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 4: Blood testing (image RIGHT via zigzag) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
+            <div class="case__media">
+              <img src="https://www.theretailbulletin.com/wp-content/uploads/2023/03/Ivie.png"
+                   alt="Blood testing kits" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="case__content">
+              <div class="case__kicker"><i class="fa-solid fa-chart-line"></i> User satisfaction & growth</div>
+              <h3 class="case__heading">Blood testing service → +300 NPS &amp; record monthly sales</h3>
+              <div class="impact">
+                <div class="impact__stat">
+                  <p class="impact__value">+300</p>
+                  <p class="impact__label">NPS swing (negative → positive)</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">Record high</p>
+                  <p class="impact__label">Monthly sales via clearer content &amp; UX</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">Integrated</p>
+                  <p class="impact__label">Fully compliant partnership with blood testing providers</p>
+                </div>
+              </div>
+              <p class="case__desc">
+                Diagnosed core pains in at-home blood testing; shipped targeted fixes to drive up satisfaction and recurring revenue.
+              </p>
+              <ul class="case__bullets">
+                <li>Prioritised qualitative themes from NPS feedback; enhanced instructions/videos for pain-free draws.</li>
+                <li>Revamped content/flows for better discoverability and accessibility, unlocking record sales.</li>
+                <li>Balanced growth with end-to-end improvements (sales → repeat users) via metrics + iteration.</li>
+              </ul>
+              <div class="case__ctaRow">
+                <a class="btn btn--primary" href="https://colinpattinson.github.io/hbme-wins/" rel="noreferrer">
+                  Read the write-up <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 5: Consultation efficiency (image LEFT) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
+            <div class="case__media">
+              <img src="https://cdn.prod.website-files.com/65afc9f3499a638404eb89b2/65c91beac254bb0f97e0d378_UI%20-%20Consultation.png"
+                   alt="Consultation workflow" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="case__content">
+              <div class="case__kicker"><i class="fa-solid fa-user-doctor"></i> Service efficiency</div>
+              <h3 class="case__heading">Consultation experience → efficiency at scale</h3>
+              <div class="impact">
+                <div class="impact__stat">
+                  <p class="impact__value">7.28</p>
+                  <p class="impact__label">Appointments per hour (industry leading efficiency)</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">99.9%</p>
+                  <p class="impact__label">Uptime, reducing incidents year-on-year</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">69.3%</p>
+                  <p class="impact__label">Meetings saved if video fails via voice fallback</p>
+                </div>
+              </div>
+              <p class="case__desc">
+                Shaped the clinician workflow so it's learnable, fast, and consistent — reducing admin friction and helping clinicians stay focused on the patient.
+              </p>
+              <ul class="case__bullets">
+                <li>Prioritised changes after deep research with clinician users.</li>
+                <li>Reduced interruptions and context switching during consultations.</li>
                 <li>Supported multi-tasking on calls while keeping patient experience high.</li>
               </ul>
-
               <div class="case__ctaRow">
                 <a class="btn btn--primary" href="https://www.kry.tech/spotlight/consultation-experience" target="_blank" rel="noreferrer">
                   Read more <i class="fa-solid fa-arrow-right"></i>
@@ -401,19 +604,93 @@
             </div>
           </article>
 
-          <!-- Case 3 -->
-          <article class="case">
+          <!-- Case 6: COVID / NHS (image RIGHT via zigzag) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
+            <div class="case__media">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/1*yVs7Twc3BLIrWXrxcDYWEQ.png"
+                   alt="NHS design system" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="case__content">
+              <div class="case__kicker"><i class="fa-solid fa-bolt"></i> Moving at pace</div>
+              <h3 class="case__heading">COVID emergency delivery → 10 days to ship</h3>
+              <div class="impact">
+                <div class="impact__stat">
+                  <p class="impact__value">10 days</p>
+                  <p class="impact__label">Discovery to live MVP under crisis conditions</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">Risk‑aware</p>
+                  <p class="impact__label">Kept quality and governance intact</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">Aligned</p>
+                  <p class="impact__label">Unblocked teams with crisp priorities</p>
+                </div>
+              </div>
+              <p class="case__desc">
+                Delivered at supercharged speed by reducing ambiguity: clear MVP definition and constant feedback loops with team, users and stakeholders.
+              </p>
+              <ul class="case__bullets">
+                <li>Defined non-negotiables early (safety, accessibility, data handling).</li>
+                <li>Ran lean discovery and shipped in increments.</li>
+                <li>Made trade-offs explicit to keep delivery moving.</li>
+              </ul>
+              <div class="case__ctaRow">
+                <a class="btn btn--primary" href="https://colinpattinson.github.io/NHSX-updates-8/" rel="noreferrer">
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 7: Nando's (image LEFT) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
+            <div class="case__media">
+              <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*u1WJbaU6Gcgq21RE"
+                   alt="Nando's menu beta" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="case__content">
+              <div class="case__kicker"><i class="fa-solid fa-screwdriver-wrench"></i> Reliability &amp; UX</div>
+              <h3 class="case__heading">Led Nando's menu redesign → +11.5% completion rate uplift &amp; +4% ordering conversions</h3>
+              <div class="impact">
+                <div class="impact__stat">
+                  <p class="impact__value">+4%</p>
+                  <p class="impact__label">Conversion lift into ordering journey</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">+11.5pp</p>
+                  <p class="impact__label">Task success uplift (81.75% beta vs 73.25% live)</p>
+                </div>
+                <div class="impact__stat">
+                  <p class="impact__value">x5</p>
+                  <p class="impact__label">Faster, more accessible menu page</p>
+                </div>
+              </div>
+              <p class="case__desc">
+                Spearheaded research-led redesign of Nando's online menu, shipping beta improvements that slashed friction, boosted ordering and made the site faster and better for users.
+              </p>
+              <ul class="case__bullets">
+                <li>Tackled user pain points by streamlining journey and enhancing product descriptions.</li>
+                <li>Rigorously validated via usability testing and live metrics before full release.</li>
+                <li>Balanced UX gains with performance optimisation on the company's highest-traffic page.</li>
+              </ul>
+              <div class="case__ctaRow">
+                <a class="btn btn--primary" href="https://medium.nandos.dev/weve-recently-launched-a-new-menu-available-on-beta-nandos-co-uk-377f2ee762bc" target="_blank" rel="noreferrer">
+                  Read the write-up <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 8: B2B Vitality (image RIGHT via zigzag) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
             <div class="case__media">
               <img src="https://images.ctfassets.net/4k34m91t6y6g/5uALLKK0aJ1chuKeGhkfom/8c2d646cb7065308b881e507c4a4e609/Vitality_x_Livi_image__2_.png"
-                   alt="Vitality and Livi partnership"
-                   loading="lazy"
-                   onerror="this.style.display='none'">
+                   alt="Vitality and Livi partnership" loading="lazy" onerror="this.style.display='none'">
             </div>
-
             <div class="case__content">
               <div class="case__kicker"><i class="fa-solid fa-arrow-trend-up"></i> B2B</div>
               <h3 class="case__heading">Working with B2B clients such as Vitality</h3>
-
               <div class="impact">
                 <div class="impact__stat">
                   <p class="impact__value">0→1</p>
@@ -428,18 +705,14 @@
                   <p class="impact__label">Reduced risk; kept partner teams aligned</p>
                 </div>
               </div>
-
               <p class="case__desc">
-                Led a constrained integration from discovery through launch — aligned stakeholders, scoped MVP, and set up instrumentation
-                to prove impact on activation and engagement.
+                Led a constrained integration from discovery through launch — aligned stakeholders, scoped MVP, and set up instrumentation to prove impact.
               </p>
-
               <ul class="case__bullets">
-                <li>Framed scope around the smallest testable path to value (and what we’d measure).</li>
+                <li>Framed scope around the smallest testable path to value (and what we'd measure).</li>
                 <li>Delivered in increments to manage dependencies and risk.</li>
                 <li>Captured trade‑offs and learnings so the approach is reusable.</li>
               </ul>
-
               <div class="case__ctaRow">
                 <a class="btn btn--primary" href="https://colinpattinson.github.io/Kry-Wins/" target="_blank" rel="noreferrer">
                   Read my case study <i class="fa-solid fa-arrow-right"></i>
@@ -448,214 +721,15 @@
             </div>
           </article>
 
-<!-- Case 4 -->
-<article class="case">
-  <div class="case__media">
-    <video 
-      poster="https://d2q79iu7y748jz.cloudfront.net/s/_customcontent/e00d7c4d66bd5915f45368c631daf787"
-      autoplay 
-      loop 
-      muted 
-      playsinline
-      preload="metadata"
-      style="width: 100%; height: auto; object-fit: cover; border-radius: inherit;"
-      onerror="this.style.display='none'">
-      <source src="/assets/videos/hbme-release.mp4" type="video/mp4">
-      <!-- Fallback to img -->
-      <img src="https://d2q79iu7y748jz.cloudfront.net/s/_customcontent/e00d7c4d66bd5915f45368c631daf787" alt="H&B&Me app release demo" loading="lazy">
-    </video>
-  </div>  <!-- <- END media ONLY -->
-
-  <div class="case__content">  <!-- <- content starts here -->
-    <div class="case__kicker"><i class="fa-solid fa-rocket"></i> 0→1 build</div>
-    <h3 class="case__heading">H&B&Me → shipped a new consumer health experience from scratch</h3>
-
-    <div class="impact">
-      <div class="impact__stat">
-        <p class="impact__value">0→1</p>
-        <p class="impact__label">New product shipped from discovery to launch</p>
-      </div>
-      <div class="impact__stat">
-        <p class="impact__value">MVP</p>
-        <p class="impact__label">Scoped under constraints; iterated in production</p>
-      </div>
-      <div class="impact__stat">
-        <p class="impact__value">Expert-led</p>
-        <p class="impact__label">Clinicians, design, engineering, commercial collaboration</p>
-      </div>
-    </div>
-
-    <p class="case__desc">
-      End‑to‑end product delivery from problem discovery through MVP and launch, balancing clinical quality, usability and commercial outcomes.
-    </p>
-
-    <ul class="case__bullets">
-      <li>Defined the problem using user research + behavioural signals, then translated it into an MVP roadmap.</li>
-      <li>Success metrics set early (activation, retention, satisfaction) and used them to guide iteration.</li>
-      <li>Delivered fast, launched from day 1 to MVP within 20 weeks</li>
-    </ul>
-
-    <div class="case__ctaRow">
-      <a class="btn btn--primary" href="https://colinpattinson.github.io/hbme-wins/" rel="noreferrer">
-        Read the case study <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>  <!-- <- END content -->
-
-</article>  <!-- <- END article -->
-
-<!-- Case 5 -->
-<article class="case">
-  <div class="case__media">
-    <img src="https://www.theretailbulletin.com/wp-content/uploads/2023/03/Ivie.png"
-         alt="Blood testing kits"
-         loading="lazy"
-         onerror="this.style.display='none'">
-  </div>
-
-  <div class="case__content">
-    <div class="case__kicker"><i class="fa-solid fa-chart-line"></i> User satisfaction & growth</div>
-    <h3 class="case__heading">Blood testing service → +300 NPS & record monthly sales</h3>
-
-    <div class="impact">
-      <div class="impact__stat">
-        <p class="impact__value">+300</p>
-        <p class="impact__label">NPS swing (negative → positive)</p>
-      </div>
-      <div class="impact__stat">
-        <p class="impact__value">Record high</p>
-        <p class="impact__label">Monthly sales via clearer content & UX</p>
-      </div>
-      <div class="impact__stat">
-        <p class="impact__value">Integration</p>
-        <p class="impact__label">Fully compliant partnership with blood testing partners</p>
-      </div>
-    </div>
-
-    <p class="case__desc">
-      Diagnosed core pains in at-home blood testing; shipped targeted fixes to drive up satisfaction and recurring revenue.
-    </p>
-
-    <ul class="case__bullets">
-      <li>Prioritised qualitative themes from NPS feedback; enhanced instructions/videos for pain-free draws.</li>
-      <li>Revamped content/flows for better discoverability and accessibility, unlocking record sales.</li>
-      <li>Balanced growth with end-to-end improvements (sales → repeat users) via metrics + iteration.</li>
-    </ul>
-
-    <div class="case__ctaRow">
-      <a class="btn btn--primary" href="https://colinpattinson.github.io/hbme-wins/" rel="noreferrer">
-        Read the write-up <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</article>
-
-<!-- Case 7 -->
-<article class="case">
-  <div class="case__media">
-    <img src="https://cdn.aptoide.com/imgs/9/2/a/92ad473f8a31f06547e30bc817975c0c_fgraphic.png"
-         alt="Kry video meeting"
-         loading="lazy"
-         onerror="this.style.display='none'">
-  </div>
-
-  <div class="case__content">
-    <div class="case__kicker"><i class="fa-solid fa-pound-sign"></i> Cost reduction</div>
-    <h3 class="case__heading">Kry → 55% cost reduction</h3>
-
-    <div class="impact">
-      <div class="impact__stat">
-        <p class="impact__value">-54.6%</p>
-        <p class="impact__label">Video call cost/min via supplier switch</p>
-      </div>
-      <div class="impact__stat">
-        <p class="impact__value">+65.9%</p>
-        <p class="impact__label">Meetings/hour on Kry Pro (vs legacy)</p>
-      </div>
-      <div class="impact__stat">
-        <p class="impact__value">69.3%</p>
-        <p class="impact__label">No-show meetings saved which would of been no shows/no income</p>
-      </div>
-    </div>
-
-    <p class="case__desc">
-      Drove profitability via ops deep-dive: renegotiated video contracts, migrated to efficient platform and salvaged no-shows - more throughput from same clinicians.
-    </p>
-
-    <ul class="case__bullets">
-      <li>Audit contracts/invoices → switched suppliers for 54.6% video cost drop + fewer faults.</li>
-      <li>Led Kry Pro migration: doubled clinician productivity without quality loss.</li>
-      <li>Shipped voice fallback: rescued 69.3% video meetings, maximising employee utilisation.</li>
-    </ul>
-
-    <div class="case__ctaRow">
-      <a class="btn btn--primary" href="https://colinpattinson.github.io/Kry-Wins/" target="_blank" rel="noreferrer">
-        Read the write-up <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</article>
-
-
-          <!-- Case 8 -->
-          <article class="case">
-            <div class="case__media">
-              <img src="https://miro.medium.com/v2/resize:fit:1400/1*yVs7Twc3BLIrWXrxcDYWEQ.png"
-                   alt="NHS design system"
-                   loading="lazy"
-                   onerror="this.style.display='none'">
-            </div>
-
-            <div class="case__content">
-              <div class="case__kicker"><i class="fa-solid fa-bolt"></i> Moving at pace</div>
-              <h3 class="case__heading">COVID emergency delivery → 10 days to ship</h3>
-
-              <div class="impact">
-                <div class="impact__stat">
-                  <p class="impact__value">Rapid delivery</p>
-                  <p class="impact__label">Short cycles, clear decisions, tight scope</p>
-                </div>
-                <div class="impact__stat">
-                  <p class="impact__value">Risk‑aware</p>
-                  <p class="impact__label">Kept quality and governance intact</p>
-                </div>
-                <div class="impact__stat">
-                  <p class="impact__value">Alignment</p>
-                  <p class="impact__label">Unblocked teams with crisp priorities</p>
-                </div>
-              </div>
-
-              <p class="case__desc">
-                Delivered at supercharged speed by reducing ambiguity: clear MVP definition and constant feedback loops with team, users and stakeholders.
-              </p>
-
-              <ul class="case__bullets">
-                <li>Defined non-negotiables early (safety, accessibility, data handling).</li>
-                <li>Ran lean discovery and shipped in increments.</li>
-                <li>Made trade-offs explicit to keep delivery moving.</li>
-              </ul>
-
-              <div class="case__ctaRow">
-                <a class="btn btn--primary" href="https://colinpattinson.github.io/NHSX-updates-8/" rel="noreferrer">
-                  Read more <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Case 9 -->
-          <article class="case">
+          <!-- Case 9: Healthy Start (image LEFT) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
             <div class="case__media">
               <img src="https://digitalhealth.blog.gov.uk/wp-content/uploads/sites/106/2018/11/Image-of-leaflet-1536x652.jpg"
-                   alt="Healthy Start leaflet"
-                   loading="lazy"
-                   onerror="this.style.display='none'">
+                   alt="Healthy Start leaflet" loading="lazy" onerror="this.style.display='none'">
             </div>
-
             <div class="case__content">
               <div class="case__kicker"><i class="fa-solid fa-rotate"></i> Digital transformation</div>
               <h3 class="case__heading">Healthy Start → transformed a legacy scheme into a digitally-enabled service</h3>
-
               <div class="impact">
                 <div class="impact__stat">
                   <p class="impact__value">Simpler</p>
@@ -667,20 +741,17 @@
                 </div>
                 <div class="impact__stat">
                   <p class="impact__value">Bold</p>
-                  <p class="impact__label">Didn’t just digitise paper; redesigned the service</p>
+                  <p class="impact__label">Didn't just digitise paper; redesigned the service</p>
                 </div>
               </div>
-
               <p class="case__desc">
                 Worked on a service vision and transformation path focused on improving access for disadvantaged families while reducing operational burden.
               </p>
-
               <ul class="case__bullets">
                 <li>Built empathy with service users and mapped failures in the current system.</li>
-                <li>Explored technology + policy/process change rather than “digital wrapper” fixes.</li>
+                <li>Explored technology + policy/process change rather than "digital wrapper" fixes.</li>
                 <li>Aligned stakeholders around a clear vision for what digitisation should deliver.</li>
               </ul>
-
               <div class="case__ctaRow">
                 <a class="btn btn--primary" href="https://digitalhealth.blog.gov.uk/2016/10/14/healthy-start-learned/" target="_blank" rel="noreferrer">
                   Read what we learned <i class="fa-solid fa-arrow-right"></i>
@@ -689,66 +760,15 @@
             </div>
           </article>
 
-          <!-- Case 10 -->
-<article class="case">
-  <div class="case__media">
-    <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*u1WJbaU6Gcgq21RE"
-         alt="Nando’s menu beta"
-         loading="lazy"
-         onerror="this.style.display='none'">
-  </div>
-
-  <div class="case__content">
-    <div class="case__kicker"><i class="fa-solid fa-screwdriver-wrench"></i> Reliability & UX</div>
-    <h3 class="case__heading">Led Nando’s menu redesign → drove +11.5% completion rate uplift & +4% ordering conversions</h3>
-
-    <div class="impact">
-      <div class="impact__stat">
-        <p class="impact__value">+4%</p>
-        <p class="impact__label">Conversion lift, generating £ millions extra</p>
-      </div>
-      <div class="impact__stat">
-        <p class="impact__value">+11.5%</p>
-        <p class="impact__label">Completion rate uplift, tackled existing users pain points</p>
-      </div>
-      <div class="impact__stat">
-        <p class="impact__value">x5</p>
-        <p class="impact__label">Faster, more accessible menu page</p>
-      </div>
-    </div>
-
-    <p class="case__desc">
-      Spearheaded research-led redesign of Nando’s online menu, shipping beta improvements that slashed friction, boosted ordering and made the site faster and better for users. [file:5]
-    </p>
-
-    <ul class="case__bullets">
-      <li>Tackled user pain points by streamlining journey and enhancing product descriptions to help customers confidence to order</li>
-      <li>Rigourously validated via usability testing and live metrics, proving beta superiority internally before full release.</li>
-      <li>Balanced UX gains with performance optimisation on the companies most important high-traffic page.</li>
-    </ul>
-
-    <div class="case__ctaRow">
-      <a class="btn btn--primary" href="https://medium.nandos.dev/weve-recently-launched-a-new-menu-available-on-beta-nandos-co-uk-377f2ee762bc" target="_blank" rel="noreferrer">
-        Read the write-up <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</article>
-
-
-          <!-- Case 11 -->
-          <article class="case">
+          <!-- Case 10: Health Product People (image RIGHT via zigzag) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
             <div class="case__media">
               <img src="https://digitalhealth.blog.gov.uk/wp-content/uploads/sites/106/2018/09/healthproductpeopleagenda-e1542638924498.jpg"
-                   alt="Health Product People community"
-                   loading="lazy"
-                   onerror="this.style.display='none'">
+                   alt="Health Product People community" loading="lazy" onerror="this.style.display='none'">
             </div>
-
             <div class="case__content">
               <div class="case__kicker"><i class="fa-solid fa-people-group"></i> Community leadership</div>
               <h3 class="case__heading">Health Product People → built a community to raise product quality in health</h3>
-
               <div class="impact">
                 <div class="impact__stat">
                   <p class="impact__value">Founded</p>
@@ -756,24 +776,21 @@
                 </div>
                 <div class="impact__stat">
                   <p class="impact__value">Cross‑org</p>
-                  <p class="impact__label">Brought teams together across healthtech to share and collaborate</p>
+                  <p class="impact__label">Brought teams together across healthtech</p>
                 </div>
                 <div class="impact__stat">
                   <p class="impact__value">Repeatable</p>
                   <p class="impact__label">Created a format for learning and delivery support</p>
                 </div>
               </div>
-
               <p class="case__desc">
                 Created a space for product people across health and care to share approaches, learn delivery craft, and collaborate on solving real problems.
               </p>
-
               <ul class="case__bullets">
                 <li>Designed sessions around practical delivery topics (discovery, alpha, better services).</li>
                 <li>Helped scale product practice through community-led learning.</li>
                 <li>Strengthened networks across government and health delivery teams.</li>
               </ul>
-
               <div class="case__ctaRow">
                 <a class="btn btn--primary" href="https://digitalhealth.blog.gov.uk/author/colin-pattinson/" target="_blank" rel="noreferrer">
                   Read posts <i class="fa-solid fa-arrow-right"></i>
@@ -785,19 +802,15 @@
             </div>
           </article>
 
-          <!-- Case 12 -->
-          <article class="case">
+          <!-- Case 11: NHSX Mental Health (image LEFT) -->
+          <article class="case" data-aos="fade-up" data-aos-delay="50">
             <div class="case__media">
               <img src="https://raw.githubusercontent.com/nhsx/Mental-Health/master/images/Mapping.jpg"
-                   alt="NHSX mental health strategy notes"
-                   loading="lazy"
-                   onerror="this.style.display='none'">
+                   alt="NHSX mental health strategy notes" loading="lazy" onerror="this.style.display='none'">
             </div>
-
             <div class="case__content">
               <div class="case__kicker"><i class="fa-solid fa-compass"></i> Product strategy</div>
               <h3 class="case__heading">NHSX + Mental Health → strategy from scratch</h3>
-
               <div class="impact">
                 <div class="impact__stat">
                   <p class="impact__value">Strategy</p>
@@ -805,24 +818,21 @@
                 </div>
                 <div class="impact__stat">
                   <p class="impact__value">Alignment</p>
-                  <p class="impact__label">Bridged policy and delivery teams and gave them direction</p>
+                  <p class="impact__label">Bridged policy and delivery teams</p>
                 </div>
                 <div class="impact__stat">
                   <p class="impact__value">Transparency</p>
                   <p class="impact__label">Shared progress through written updates</p>
                 </div>
               </div>
-
               <p class="case__desc">
                 Documented strategy and progress in a way that made complex, multi-stakeholder work legible — and easier to execute against.
               </p>
-
               <ul class="case__bullets">
-                <li>Clarified priorities and the “why” behind delivery choices in contested environment.</li>
+                <li>Clarified priorities and the "why" behind delivery choices in a contested environment.</li>
                 <li>Made progress visible for stakeholders and partner teams to build trust.</li>
-                <li>Set in motion a path for future teams to make incremental improvements in mental health space.</li>
+                <li>Set in motion a path for future teams to make incremental improvements.</li>
               </ul>
-
               <div class="case__ctaRow">
                 <a class="btn btn--primary" href="https://nhsx.github.io/Mental-Health/" target="_blank" rel="noreferrer">
                   View notes <i class="fa-solid fa-arrow-right"></i>
@@ -831,47 +841,98 @@
             </div>
           </article>
 
-        </div> <!-- /.case-list -->
-      </div> <!-- /.case-studies__wrap -->
+        </div><!-- /.case-list -->
+      </div><!-- /.case-studies__wrap -->
     </section>
 
-    <footer class="text-center text-gray-500 pt-20 pb-12 border-t border-gray-200">
+    <!-- Award Badge -->
+    <div class="award-badge" data-aos="zoom-in">
+      <div class="award-badge__icon"><i class="fa-solid fa-trophy"></i></div>
+      <div class="award-badge__text">
+        <strong>Retail Week Awards 2025 — Customer Experience Game Changer</strong>
+        <span>Won against John Lewis, Sweaty Betty &amp; other top UK retailers for impact on customer behaviour and retention with H&amp;B&amp;Me.</span>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" data-aos="fade-up">
+      <h2 class="testimonials-section__title">What colleagues say</h2>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+          <p class="testimonial-card__quote">
+            He's the rare kind of leader that's upbeat and encouraging but also has the knowledge, experience and focus to get things done. He's always done the research and knows what moving parts and stakeholder expectations his team needs to consider — getting everyone engaged in ideation within the right guardrails.
+          </p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__name">Suzanne Al-Gayaar</span>
+            <span class="testimonial-card__role">Senior Copywriter &amp; UX Content Designer (H&amp;B&amp;Me)</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="80">
+          <p class="testimonial-card__quote">
+            Colin is one of the best Product Managers I ever had the pleasure to work with. He never got tired to protect and encourage his team, fight for our best interests, and come up with many ideas on how to make work more productive and fun. As a designer working with him, I felt very much trusted and supported.
+          </p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__name">Christina Reck</span>
+            <span class="testimonial-card__role">Staff Product Designer, Deel (formerly Kry)</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="160">
+          <p class="testimonial-card__quote">
+            He has a very collaborative way of working and has always been a great support to the rest of the team. He delivered some fantastic features and I was really looking forward to working together on incredible innovations for the weight management service.
+          </p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__name">Dr Jamie Thakrar, PhD</span>
+            <span class="testimonial-card__role">HealthTech Specialist, UKDHC Interoperability Steering Committee (H&amp;B&amp;Me)</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="240">
+          <p class="testimonial-card__quote">
+            He is a fair PM: protects his team, pushes back when needed, uses data and gets constantly involved in the product lifecycle — but letting the experts run their bit. His passion is contagious. He will be a truly passionate PM, a great teacher and a fun person to work with.
+          </p>
+          <div class="testimonial-card__author">
+            <span class="testimonial-card__name">Serena Previti</span>
+            <span class="testimonial-card__role">Product Manager, TravelTech (formerly Kry)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="text-center text-gray-500 pt-20 pb-12 border-t border-gray-200 mt-20">
       <p>&copy; 2026 Colin Pattinson. Built with GitHub Pages.</p>
     </footer>
 
   </main>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // Gapless marquee: duplicate exactly one "half" at runtime and scroll by that exact width.
+    // Init AOS
+    AOS.init({ duration: 600, once: true, offset: 80 });
+
+    // Gapless marquee
     (function(){
       const track = document.getElementById('logoTrack');
       if (!track) return;
-
       if (!track.dataset.duped) {
         const half = document.createElement('div');
         half.className = 'marquee__half';
-        half.style.display = 'flex';
-        half.style.alignItems = 'center';
-        half.style.gap = 'var(--gap)';
-        half.style.width = 'max-content';
-
+        half.style.cssText = 'display:flex;align-items:center;gap:var(--gap);width:max-content;';
         while (track.firstChild) half.appendChild(track.firstChild);
         track.appendChild(half);
-
         const clone = half.cloneNode(true);
         clone.setAttribute('aria-hidden', 'true');
         track.appendChild(clone);
-
         track.dataset.duped = 'true';
       }
-
       const setHalfWidth = () => {
         const half = track.querySelector('.marquee__half');
         if (!half) return;
-        const w = half.getBoundingClientRect().width;
-        track.style.setProperty('--marquee-half', w + 'px');
+        track.style.setProperty('--marquee-half', half.getBoundingClientRect().width + 'px');
       };
-
       window.addEventListener('load', setHalfWidth);
       window.addEventListener('resize', setHalfWidth);
       setHalfWidth();
